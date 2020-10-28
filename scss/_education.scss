@@ -1,0 +1,48 @@
+.philosophy-container {
+  padding-top :3rem;
+  h2 {
+    text-align :center;
+  }
+  p {
+    padding-top :2rem;
+    text-align :center;
+  }
+}
+
+.policy-container {
+  padding-top :4rem;
+  h2 {
+    text-align :center;
+  }
+  .policy-point {
+    @include mq-up(md) {
+      flex-direction :row;
+      justify-content :space-around;
+    }
+
+@include mq-down(md) {
+      flex-direction :column;
+    }  display :flex;
+    padding-top :2rem;
+
+    .img-container {
+@include mq-down(md) {
+        width :100%;
+      }
+
+      width :45%;
+    }
+    .text-container {
+@include mq-down(md) {
+        width :100%;
+      }
+
+      width :45%;
+    }
+  }
+  #point-2 {
+    @include mq-up(md) {
+      flex-direction :row-reverse;
+    }
+  }
+}

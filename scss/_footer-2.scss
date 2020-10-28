@@ -1,0 +1,114 @@
+footer {
+  background-color :$orange;
+  color :$white;
+  overflow :hidden;
+  padding-bottom :1rem;
+  padding-top :2.5rem;
+  position :relative;
+  width :100%;
+  .footer-inner {
+    @include mq-up(lg) {
+      margin :0 auto;
+      position :relative;
+    }
+
+@include mq-up(md) {
+      margin :0 auto;
+      position :relative;
+    }
+
+@include mq-down(md) {
+      flex-direction :column;
+    }  box-sizing :border-box;
+    display :flex;
+    flex-direction :column;
+
+    .footer-bottom {
+      @include mq-up(md) {
+        display :flex;
+        flex-direction :row;
+        justify-content :start;
+      }
+
+@include mq-down(md) {
+        border-bottom :1.6px solid $white;
+        padding-bottom :1rem;
+        padding-left :1rem;
+        padding-top :1rem;
+      }
+
+@include mq-up(md) {
+        address {
+          padding-left :2.5rem;
+        }
+      }
+
+      .footer-logo {
+        font-size :1.875rem;
+        font-weight :normal;
+        margin :0;
+        padding-bottom :1.5rem;
+      }
+      address p {
+        font-size :1rem;
+        font-style :normal;
+        font-weight :normal;
+        line-height :1.8;
+        margin :0;
+        span {
+          display :block;
+          font-size :1rem;
+        }
+      }
+    }
+    .footer-top {
+      @include mq-up(md) {
+        display :flex;
+        flex-wrap :wrap;
+      }
+
+@include mq-down(md) {
+        display :none;
+      }
+
+      ul {
+        font-weight :normal;
+        padding :0;
+        width :25%;
+      }
+      li {
+        line-height :2.5;
+        a {
+          color :$white;
+          font-size :0.75rem;
+          position :relative;
+          white-space :nowrap;
+        }
+        a::before {
+          background :$white;
+          bottom :-0.125rem;
+          content :'';
+          height :0.0625rem;
+          left :0;
+          position :absolute;
+          transition :all 0.3s ease;
+          width :0%;
+        }
+        a:hover::before {
+          width :100%;
+        }
+      }
+    }
+  }
+
+  .footer-copyright {
+    font-size :0.8rem;
+    padding-top :2.75rem;
+    text-align :center;
+    width :100%;
+  }
+}
+
+footer .footer-inner .footer-bottom {
+  display :none;
+}

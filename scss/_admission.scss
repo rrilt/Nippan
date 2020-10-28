@@ -1,0 +1,86 @@
+.dltable {
+  background-color :#FFFFFF;
+  border :1px solid #CCCCCC;
+  border-radius :4px;
+  margin :15px;
+  width :90%;
+
+  .row1 {
+    width :25%;
+  }
+  .row2 {
+    width :25%;
+  }
+  .row3 {
+    width :25%;
+  }
+  .row4 {
+    width :25%;
+  }
+
+
+  dl {
+    border-bottom :1px solid #CCCCCC;
+    display :flex;
+    flex-wrap :wrap;
+    font-size :12px;
+    justify-content :left;
+    text-align :center;
+    &:last-child {
+      border-bottom :none;
+    }
+    dt {
+      background :#F2F2F2 none repeat scroll 0 0;
+      color :#333333;
+      padding :10px 0;
+    }
+    dd {
+      padding :10px 0;
+    }
+  }
+}
+
+.com_table {
+  margin-top :40px;
+  table-layout :fixed;
+  width :100%;
+  th {
+    background-color :$orange;
+    color :$white;
+    letter-spacing :0.15em;
+    padding :0.4rem;
+    text-align :center;
+    vertical-align :middle;
+  }
+  tr {
+    border-top :1px solid $white;
+  }
+  td {
+    background-color :lighten($color :$orange, $amount :50);
+    border-left :1px solid $white;
+    padding :1.4rem 0.3rem;
+    text-align :center;
+    vertical-align :middle;
+  }
+}
+
+.admission-detail {
+  padding-top :3rem;
+}
+
+.admission-flow {
+  padding-top :4rem;
+  .flow-list {
+    padding-top :3rem;
+    li {
+      position :relative;
+    }
+    span {
+      text-align :center;
+    }
+  }
+}
+
+.observation {
+  padding-top :3rem;
+}

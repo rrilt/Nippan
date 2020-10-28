@@ -1,0 +1,145 @@
+.boss-message {
+  padding-top :3rem;
+  h1 {
+    text-align :center;
+  }
+  .container {
+    @include mq-down(md) {
+      flex-direction :column;
+    }  display :flex;
+    justify-content :space-between;
+    padding-top :2rem;
+
+
+    .boss-view {
+      @include mq-down(md) {
+        margin :0 0 1rem;
+        overflow :hidden;
+        padding-top :75%;
+        position :relative;
+        text-align :center;
+        width :100%;
+
+        img {
+          height :100%;
+          left :50%;
+          object-fit :cover;
+          object-position :0px -1rem;
+          position :absolute;
+          top :50%;
+          transform :translate(-50%,-50%);
+        }
+      }  width :45%;
+    }
+    .message-container {
+      @include mq-down(md) {
+        width :100%;
+      }  width :50%;
+    }
+  }
+}
+
+.list-container {
+  margin :0;
+
+  .data {
+    border-bottom :1px solid $black;
+    color :$black;
+    display :flex;
+    font-size :0.75rem;
+    padding :0.8rem 0;
+    h3 {
+      display :block;
+      font-size :0.75rem;
+      margin :0;
+      width :20%;
+    }
+    p {
+      font-weight :500;
+      letter-spacing :0.05em;
+      margin :0;
+      width :80%;
+    }
+  }
+}
+
+
+.history {
+  padding-top :4rem;
+  h1 {
+    padding-bottom :1;
+    text-align :center;
+  }
+}
+.profile {
+  padding-top :4rem;
+  h1 {
+    text-align :center;
+  }
+  .container-bottom {
+    @include mq-down(md) {
+      flex-direction :column;
+    }  display :flex;
+    justify-content :space-between;
+    padding-top :2rem;
+
+    .image-container {
+      @include mq-down(md) {
+        width :100%;
+        .ggmap {
+          display :none;
+        }
+      }  width :45%;
+      .ggmap {
+        height :0;
+        overflow :hidden;
+        padding-bottom :66%;
+        position :relative;
+        iframe {
+          height :100%;
+          left :0;
+          position :absolute;
+          top :0;
+          width :100%;
+        }
+      }
+    }
+    .info-container {
+      @include mq-down(md) {
+        width :100%;
+      }  width :50%;
+
+      p {
+        margin-bottom :0.5rem;
+      }
+      .name-container {
+        border-bottom :1px solid $black;
+        margin :0.8rem 0;
+      }
+      .adress-container {
+        border-bottom :1px solid $black;
+        margin :0.8rem 0;
+      }
+      .contact-container {
+        border-bottom :1px solid $black;
+        margin :0.8rem 0;
+      }
+    }
+  }
+  .ggmap-x {
+    @include mq-up(md) {
+      display :none;
+    }  height :0;
+    overflow :hidden;
+    padding-bottom :66%;
+    position :relative;
+
+    iframe {
+      height :100%;
+      left :0;
+      position :absolute;
+      top :0;
+      width :100%;
+    }
+  }
+}

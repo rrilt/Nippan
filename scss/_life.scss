@@ -1,0 +1,103 @@
+.list-container {
+  margin :0;
+  padding-top :1rem;
+  .row {
+    border-bottom :0.05rem solid $black;
+    color :$black;
+    display :flex;
+    font-size :0.8rem;
+    padding :1rem 0;
+    h3 {
+      display :block;
+      font-size :0.8rem;
+      margin :0;
+      width :20%;
+    }
+    p {
+      font-weight :500;
+      letter-spacing :0.05em;
+      margin :0;
+      width :80%;
+    }
+  }
+}
+
+.grade-collection {
+  display :flex;
+  flex-wrap :wrap;
+  .grade-container {
+    @include mq-down(md) {
+      width :50%;
+    }  text-align :center;
+    width :25%;
+  }
+}
+
+.grade {
+  background :$orange;
+  border-radius :50%;
+  display :inline-block;
+  height :80px;
+  position :relative;
+  width :80px;
+}
+
+.grade p {
+  color :$white;
+  display :inline-block;
+  left :0;
+  position :absolute;
+  text-align :center;
+  top :50%;
+  -webkit-transform :translateY(-50%);
+          transform :translateY(-50%);
+  width :80px;
+}
+
+
+.grade-wrapper {
+  padding-top :3rem;
+}
+
+
+.schedule-wrapper {
+  padding-top :5rem;
+}
+.schedule {
+  @include mq-down(md) {
+    flex-direction :column;
+  }  align-items :center;
+  display :flex;
+  justify-content :space-between;
+  padding-bottom :3rem;
+
+  .schedule-grade {
+    @include mq-down(md) {
+      padding-bottom :2rem;
+      width :100%;
+    }  width :30%;
+  }
+  .schedule-detail {
+    @include mq-down(md) {
+      width :100%;
+    }  width :70%;
+  }
+  .schedule-item {
+    display :flex;
+    padding-bottom :1rem;
+  }
+  .detail-left {
+    align-items :center;
+    display :flex;
+    width :30%;
+    p {
+      font-size :2rem;
+    }
+  }
+  .detail-right {
+    width :65%;
+    span {
+      font-weight :bold;
+    }
+  }
+}

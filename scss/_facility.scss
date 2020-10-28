@@ -1,0 +1,24 @@
+.facility-wrapper {
+  padding-top :3rem;
+  .facility-container {
+    @include mq-up(md) {
+      display :flex;
+      flex-wrap :wrap;
+      justify-content :space-between;
+    }
+    .facility {
+      @include mq-up(md) {
+        padding-top :1.5rem;
+        width :45%;
+      }
+
+@include mq-down(md) {
+        padding-top :1.5rem;
+      }
+
+      figcaption {
+        text-align :center;
+      }
+    }
+  }
+}

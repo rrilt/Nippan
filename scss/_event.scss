@@ -1,0 +1,69 @@
+
+.season-collection {
+  display :flex;
+  flex-wrap :wrap;
+  .season-container {
+    @include mq-down(md) {
+      width :50%;
+    }  text-align :center;
+    width :25%;
+  }
+}
+
+.season {
+  background :$orange;
+  border-radius :50%;
+  display :inline-block;
+  height :80px;
+  position :relative;
+  width :80px;
+}
+
+.season p {
+  color :$white;
+  display :inline-block;
+  left :0;
+  position :absolute;
+  text-align :center;
+  top :50%;
+  -webkit-transform :translateY(-50%);
+          transform :translateY(-50%);
+  width :80px;
+}
+
+
+.season-wrapper {
+  padding-top :3rem;
+}
+
+
+.event-wrapper {
+  padding-top :5rem;
+}
+.season-event {
+  @include mq-down(md) {
+    flex-direction :column;
+  }  align-items :center;
+  display :flex;
+  justify-content :space-between;
+  padding-bottom :5rem;
+
+  .season-grade {
+    @include mq-down(lg) {
+      padding-bottom :2rem;
+    }
+  }
+
+  .event {
+    display :flex;
+    padding-bottom :1rem;
+  }
+  .event-date {
+    align-items :center;
+    display :flex;
+    width :30%;
+  }
+  .event-name {
+    width :65%;
+  }
+}
