@@ -14,7 +14,7 @@ img {
 .open {
   header {
     .header-inner {
-      @include mq-down(md) {
+      @include mq-down(lg) {
         overflow :hidden  ;
         #nav-toggle span {
           background :$black  ;

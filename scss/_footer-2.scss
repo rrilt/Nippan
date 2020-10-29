@@ -3,7 +3,6 @@ footer {
   color :$white;
   overflow :hidden;
   padding-bottom :1rem;
-  padding-top :2.5rem;
   position :relative;
   width :100%;
   .footer-inner {
@@ -63,8 +62,6 @@ footer {
     }
     .footer-top {
       @include mq-up(md) {
-        display :flex;
-        flex-wrap :wrap;
       }
 
 @include mq-down(md) {
@@ -73,8 +70,6 @@ footer {
 
       ul {
         font-weight :normal;
-        padding :0;
-        width :25%;
       }
       li {
         line-height :2.5;
@@ -103,7 +98,7 @@ footer {
 
   .footer-copyright {
     font-size :0.8rem;
-    padding-top :2.75rem;
+    padding-top :1rem;
     text-align :center;
     width :100%;
   }

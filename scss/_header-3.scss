@@ -8,7 +8,7 @@ header {
   width :100vw;
   z-index :100;
   .header-inner {
-    @include mq-down(md) {
+    @include mq-down(lg) {
       flex-direction :row;
     }  display :flex;
     flex-direction :column;
@@ -27,21 +27,21 @@ header {
       width :320px;
     }
     #nav-toggle {
-      @include mq-down(md) {
+      @include mq-down(lg) {
         cursor :pointer;
         display :block;
         height :2rem;
         position :fixed;
         right :1rem;
-        top :1rem;
+        top :1urem;
         z-index :10000;
       }
 
-@include mq-up(md) {
+@include mq-up(lg) {
         display :none;
       }
 
-@include mq-down(md) {
+@include mq-down(lg) {
         &:hover span:nth-child(1) {
           top :0.1563rem;
         }
@@ -51,13 +51,13 @@ header {
       }
 
       >div {
-        @include mq-down(md) {
+        @include mq-down(lg) {
           position :relative;
           width :2.25rem;
         }
       }
       span {
-        @include mq-down(md) {
+        @include mq-down(lg) {
           background :$black;
           display :block;
           height :0.0625rem;
@@ -79,7 +79,7 @@ header {
       }
     }
     #gloval-nav {
-      @include mq-down(md) {
+      @include mq-down(lg) {
         align-items :center;
         background :$white;
         bottom :0;
@@ -99,7 +99,7 @@ header {
         z-index :990;
       }
 
-@include mq-up(md) {
+@include mq-up(lg) {
         display :flex;
         flex-direction :column;
         margin-top :0.625rem;
@@ -108,7 +108,7 @@ header {
       }
 
       a {
-        @include mq-down(md) {
+        @include mq-down(lg) {
           color :$black;
           display :block;
           padding :0.625rem 0;
@@ -121,11 +121,11 @@ header {
         }
       }
       ul {
-        @include mq-down(md) {
+        @include mq-down(lg) {
           list-style :none;
         }
 
-@include mq-up(md) {
+@include mq-up(lg) {
           align-items :center;
           background-color :$orange;
           display :flex;
@@ -137,7 +137,7 @@ header {
         }
 
         li {
-          @include mq-down(md) {
+          @include mq-down(lg) {
             opacity :0;
             transform :translateX(320px);
             transition :transform 0.6s ease, opacity 0.2s ease;
@@ -162,7 +162,7 @@ header {
             }
           }
 
-@include mq-up(md) {
+@include mq-up(lg) {
             padding-left :0.75rem;
             padding-right :0.75rem;
             text-align :center;
@@ -175,7 +175,7 @@ header {
           }
         }
         li .active a {
-          @include mq-up(md) {
+          @include mq-up(lg) {
             border-bottom :0.125rem solid #008090;
           }
         }
@@ -185,7 +185,7 @@ header {
 }
 
 .view-wrapper {
-  @include mq-down(md) {
+  @include mq-down(lg) {
     padding-top :5rem;
   }  padding-top :7.5rem;
 }

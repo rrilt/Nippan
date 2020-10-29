@@ -3,7 +3,7 @@ header {
   height :4rem;
   left :0;
   opacity :1;
-  position :sticky;
+  position :fixed;
   top :0;
   width :100vw;
   z-index :100;
@@ -21,7 +21,7 @@ header {
       width :320px;
     }
     #nav-toggle {
-      @include mq-down(md) {
+      @include mq-down(lg) {
         cursor :pointer;
         display :block;
         height :2rem;
@@ -31,11 +31,11 @@ header {
         z-index :10000;
       }
 
-@include mq-up(md) {
+@include mq-up(lg) {
         display :none;
       }
 
-@include mq-down(md) {
+@include mq-down(lg) {
         &:hover span:nth-child(1) {
           top :0.1563rem;
         }
@@ -45,13 +45,13 @@ header {
       }
 
       >div {
-        @include mq-down(md) {
+        @include mq-down(lg) {
           position :relative;
           width :2.25rem;
         }
       }
       span {
-        @include mq-down(md) {
+        @include mq-down(lg) {
           background :$white;
           display :block;
           height :0.0625rem;
@@ -73,7 +73,7 @@ header {
       }
     }
     #gloval-nav {
-      @include mq-down(md) {
+      @include mq-down(lg) {
         align-items :center;
         background :$white;
         bottom :0;
@@ -93,7 +93,7 @@ header {
         z-index :990;
       }
 
-@include mq-up(md) {
+@include mq-up(lg) {
         display :flex;
         flex-direction :column;
         justify-content :center;
@@ -102,7 +102,7 @@ header {
       }
 
       a {
-        @include mq-down(md) {
+        @include mq-down(lg) {
           color :$black;
           display :block;
           padding :0.625rem 0;
@@ -115,11 +115,11 @@ header {
         }
       }
       ul {
-        @include mq-down(md) {
+        @include mq-down(lg) {
           list-style :none;
         }
 
-@include mq-up(md) {
+@include mq-up(lg) {
           align-items :center;
           display :flex;
           font-weight :normal;
@@ -128,32 +128,41 @@ header {
         }
 
         li {
-          @include mq-down(md) {
+          @include mq-down(lg) {
             opacity :0;
             transform :translateX(320px);
             transition :transform 0.6s ease, opacity 0.2s ease;
 
             &:nth-child(2) {
-              transition-delay :0.15s;
+              transition-delay :0.10s;
             }
             &:nth-child(3) {
-              transition-delay :0.3s;
+              transition-delay :0.2s;
             }
             &:nth-child(4) {
-              transition-delay :0.45s;
+              transition-delay :0.3s;
             }
             &:nth-child(5) {
-              transition-delay :0.6s;
+              transition-delay :0.4s;
             }
             &:nth-child(6) {
-              transition-delay :0.75s;
+              transition-delay :0.5s;
             }
             &:nth-child(7) {
+              transition-delay :0.6s;
+            }
+            &:nth-child(8) {
+              transition-delay :0.7s;
+            }
+            &:nth-child(9) {
+              transition-delay :0.8s;
+            }
+            &:nth-child(10) {
               transition-delay :0.9s;
             }
           }
 
-@include mq-up(md) {
+@include mq-up(lg) {
             padding-left :0.75rem;
             padding-right :0.75rem;
             white-space :nowrap;
@@ -164,7 +173,7 @@ header {
           }
         }
         li .active a {
-          @include mq-up(md) {
+          @include mq-up(lg) {
             border-bottom :0.125rem solid #008090;
           }
         }
@@ -172,3 +181,4 @@ header {
     }
   }
 }
+

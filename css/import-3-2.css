@@ -28,7 +28,7 @@ header .header-inner {
   padding: 0 2.5rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   header .header-inner {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -58,25 +58,25 @@ header .header-inner .header-logo {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   header .header-inner #nav-toggle {
     cursor: pointer;
     display: block;
     height: 2rem;
     position: fixed;
     right: 1rem;
-    top: 1rem;
+    top: 1urem;
     z-index: 10000;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   header .header-inner #nav-toggle {
     display: none;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   header .header-inner #nav-toggle:hover span:nth-child(1) {
     top: 0.1563rem;
   }
@@ -85,14 +85,14 @@ header .header-inner .header-logo {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   header .header-inner #nav-toggle > div {
     position: relative;
     width: 2.25rem;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   header .header-inner #nav-toggle span {
     background: #000000;
     display: block;
@@ -116,7 +116,7 @@ header .header-inner .header-logo {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   header .header-inner #gloval-nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -148,7 +148,7 @@ header .header-inner .header-logo {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   header .header-inner #gloval-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -163,7 +163,7 @@ header .header-inner .header-logo {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   header .header-inner #gloval-nav a {
     color: #000000;
     display: block;
@@ -177,13 +177,13 @@ header .header-inner .header-logo {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   header .header-inner #gloval-nav ul {
     list-style: none;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   header .header-inner #gloval-nav ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -201,7 +201,7 @@ header .header-inner .header-logo {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   header .header-inner #gloval-nav ul li {
     opacity: 0;
     -webkit-transform: translateX(320px);
@@ -237,7 +237,7 @@ header .header-inner .header-logo {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   header .header-inner #gloval-nav ul li {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -251,7 +251,7 @@ header .header-inner .header-logo {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   header .header-inner #gloval-nav ul li .active a {
     border-bottom: 0.125rem solid #008090;
   }
@@ -261,7 +261,7 @@ header .header-inner .header-logo {
   padding-top: 7.5rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .view-wrapper {
     padding-top: 5rem;
   }
@@ -276,7 +276,6 @@ footer {
   color: #FFFFFF;
   overflow: hidden;
   padding-bottom: 1rem;
-  padding-top: 2.5rem;
   position: relative;
   width: 100%;
 }
@@ -366,16 +365,6 @@ footer .footer-inner .footer-bottom address p span {
   font-size: 1rem;
 }
 
-@media screen and (min-width: 768px) {
-  footer .footer-inner .footer-top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
 @media screen and (max-width: 767px) {
   footer .footer-inner .footer-top {
     display: none;
@@ -384,8 +373,6 @@ footer .footer-inner .footer-bottom address p span {
 
 footer .footer-inner .footer-top ul {
   font-weight: normal;
-  padding: 0;
-  width: 25%;
 }
 
 footer .footer-inner .footer-top li {
@@ -417,7 +404,7 @@ footer .footer-inner .footer-top li a:hover::before {
 
 footer .footer-copyright {
   font-size: 0.8rem;
-  padding-top: 2.75rem;
+  padding-top: 1rem;
   text-align: center;
   width: 100%;
 }
@@ -438,7 +425,7 @@ img {
   width: 100%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .open header .header-inner {
     overflow: hidden;
   }

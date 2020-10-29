@@ -1,35 +1,46 @@
-.list-container {
+.opentime-container {
   margin :0;
   padding-top :1rem;
-  .row {
-    border-bottom :0.05rem solid $black;
+  .opentime-inner {
+    @include mq-up(md) {
+      align-items :center;
+      display :flex;
+    }  border-bottom :1px solid $black;
     color :$black;
-    display :flex;
-    font-size :0.8rem;
-    padding :1rem 0;
-    h3 {
-      display :block;
-      font-size :0.8rem;
-      margin :0;
-      width :20%;
+    font-size :0.75rem;
+    padding :0.8rem 0;
+
+    dt {
+      @include mq-up(md) {
+        text-align :center;
+        width :30%;
+      }  font-size :1.25rem;
+      margin :0 ;
     }
-    p {
-      font-weight :500;
-      letter-spacing :0.05em;
-      margin :0;
-      width :80%;
+    .dd-container {
+      @include mq-up(md) {
+        width :70%;
+      }  margin :0;
+      dd {
+        font-size :1rem;
+        letter-spacing :0.05em;
+        margin :0;
+      }
     }
   }
 }
 
-.grade-collection {
-  display :flex;
-  flex-wrap :wrap;
-  .grade-container {
-    @include mq-down(md) {
-      width :50%;
-    }  text-align :center;
-    width :25%;
+.opentime-wrapper {
+  margin :0 auto;
+  text-align :center;
+  .container {
+    max-width :800px;
+  }
+}
+
+.grade-container {
+  .grade-inner {
+    text-align :center;
   }
 }
 
@@ -63,41 +74,32 @@
 .schedule-wrapper {
   padding-top :5rem;
 }
-.schedule {
-  @include mq-down(md) {
-    flex-direction :column;
-  }  align-items :center;
-  display :flex;
-  justify-content :space-between;
-  padding-bottom :3rem;
 
-  .schedule-grade {
-    @include mq-down(md) {
-      padding-bottom :2rem;
-      width :100%;
-    }  width :30%;
+
+.schedule-container {
+  margin :0;
+  .schedule {
+    padding-bottom :3rem;
   }
-  .schedule-detail {
-    @include mq-down(md) {
-      width :100%;
-    }  width :70%;
-  }
-  .schedule-item {
-    display :flex;
-    padding-bottom :1rem;
-  }
-  .detail-left {
-    align-items :center;
-    display :flex;
-    width :30%;
-    p {
-      font-size :2rem;
+
+  .schedule-inner {
+    @include mq-up(md) {
+      align-items :center;
+    }  color :$black;
+    font-size :0.75rem;
+    padding :0.8rem 0;
+    dt {
+      font-size :1.25rem;
+      margin :0 ;
     }
-  }
-  .detail-right {
-    width :65%;
-    span {
-      font-weight :bold;
+    .dd-container {
+      @include mq-up(md) {
+      }  margin :0;
+      dd {
+        font-size :1rem;
+        letter-spacing :0.05em;
+        margin :0;
+      }
     }
   }
 }

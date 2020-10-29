@@ -6,8 +6,7 @@ header {
   height: 4rem;
   left: 0;
   opacity: 1;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100vw;
   z-index: 100;
@@ -43,7 +42,7 @@ header .header-inner .header-logo {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   header .header-inner #nav-toggle {
     cursor: pointer;
     display: block;
@@ -55,13 +54,13 @@ header .header-inner .header-logo {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   header .header-inner #nav-toggle {
     display: none;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   header .header-inner #nav-toggle:hover span:nth-child(1) {
     top: 0.1563rem;
   }
@@ -70,14 +69,14 @@ header .header-inner .header-logo {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   header .header-inner #nav-toggle > div {
     position: relative;
     width: 2.25rem;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   header .header-inner #nav-toggle span {
     background: #FFFFFF;
     display: block;
@@ -101,7 +100,7 @@ header .header-inner .header-logo {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   header .header-inner #gloval-nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -133,7 +132,7 @@ header .header-inner .header-logo {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   header .header-inner #gloval-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -150,7 +149,7 @@ header .header-inner .header-logo {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   header .header-inner #gloval-nav a {
     color: #000000;
     display: block;
@@ -164,13 +163,13 @@ header .header-inner .header-logo {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   header .header-inner #gloval-nav ul {
     list-style: none;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   header .header-inner #gloval-nav ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -186,7 +185,7 @@ header .header-inner .header-logo {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   header .header-inner #gloval-nav ul li {
     opacity: 0;
     -webkit-transform: translateX(320px);
@@ -197,32 +196,44 @@ header .header-inner .header-logo {
     transition: transform 0.6s ease, opacity 0.2s ease, -webkit-transform 0.6s ease;
   }
   header .header-inner #gloval-nav ul li:nth-child(2) {
-    -webkit-transition-delay: 0.15s;
-            transition-delay: 0.15s;
+    -webkit-transition-delay: 0.10s;
+            transition-delay: 0.10s;
   }
   header .header-inner #gloval-nav ul li:nth-child(3) {
+    -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+  }
+  header .header-inner #gloval-nav ul li:nth-child(4) {
     -webkit-transition-delay: 0.3s;
             transition-delay: 0.3s;
   }
-  header .header-inner #gloval-nav ul li:nth-child(4) {
-    -webkit-transition-delay: 0.45s;
-            transition-delay: 0.45s;
-  }
   header .header-inner #gloval-nav ul li:nth-child(5) {
+    -webkit-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+  }
+  header .header-inner #gloval-nav ul li:nth-child(6) {
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+  }
+  header .header-inner #gloval-nav ul li:nth-child(7) {
     -webkit-transition-delay: 0.6s;
             transition-delay: 0.6s;
   }
-  header .header-inner #gloval-nav ul li:nth-child(6) {
-    -webkit-transition-delay: 0.75s;
-            transition-delay: 0.75s;
+  header .header-inner #gloval-nav ul li:nth-child(8) {
+    -webkit-transition-delay: 0.7s;
+            transition-delay: 0.7s;
   }
-  header .header-inner #gloval-nav ul li:nth-child(7) {
+  header .header-inner #gloval-nav ul li:nth-child(9) {
+    -webkit-transition-delay: 0.8s;
+            transition-delay: 0.8s;
+  }
+  header .header-inner #gloval-nav ul li:nth-child(10) {
     -webkit-transition-delay: 0.9s;
             transition-delay: 0.9s;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   header .header-inner #gloval-nav ul li {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -234,7 +245,7 @@ header .header-inner .header-logo {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   header .header-inner #gloval-nav ul li .active a {
     border-bottom: 0.125rem solid #008090;
   }
@@ -245,7 +256,7 @@ footer {
   color: #FFFFFF;
   overflow: hidden;
   padding-bottom: 1rem;
-  padding-top: 2.5rem;
+  padding-top: 1.5rem;
   position: relative;
   width: 100%;
 }
@@ -314,8 +325,8 @@ footer .footer-inner {
 
 @media screen and (max-width: 767px) {
   footer .footer-inner .footer-bottom {
-    border-bottom: 1.6px solid #FFFFFF;
-    padding-bottom: 1rem;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 0.5rem;
     padding-left: 1rem;
     padding-top: 1rem;
   }
@@ -347,11 +358,6 @@ footer .footer-inner .footer-bottom address p span {
 
 @media screen and (min-width: 768px) {
   footer .footer-inner .footer-top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     padding-bottom: 1rem;
   }
 }
@@ -365,7 +371,6 @@ footer .footer-inner .footer-bottom address p span {
 footer .footer-inner .footer-top ul {
   font-weight: normal;
   padding: 0;
-  width: 25%;
 }
 
 footer .footer-inner .footer-top li {
@@ -397,7 +402,7 @@ footer .footer-inner .footer-top li a:hover::before {
 
 footer .footer-copyright {
   font-size: 0.8rem;
-  padding-top: 0;
+  padding-top: 1rem;
   text-align: center;
   width: 100%;
 }
@@ -414,7 +419,7 @@ img {
   width: 100%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .open header .header-inner {
     overflow: hidden;
   }

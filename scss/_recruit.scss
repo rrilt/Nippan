@@ -25,29 +25,41 @@
   }
 }
 
-.list-container {
+.require-container {
   margin :0;
-  padding-bottom :2rem;
-  padding-top :3rem;
-  .list {
-    border-bottom :0.05rem solid $black;
+  .require-inner {
+    @include mq-up(md) {
+      align-items :center;
+      display :flex;
+    }  border-bottom :1px solid $black;
     color :$black;
-    display :flex;
     font-size :0.75rem;
-    padding :1rem 0;
-    h3 {
-      display :block;
-      font-size :0.75rem;
-      margin :0;
-      padding-left :0.6rem;
-      width :20%;
+    padding :0.8rem 0;
+
+    dt {
+      @include mq-up(md) {
+        text-align :center;
+        width :30%;
+      }  font-size :1.25rem;
+      margin :0 ;
     }
-    p {
-      font-weight :500;
-      letter-spacing :0.05em;
-      margin :0;
-      width :80%;
+    .dd-container {
+      @include mq-up(md) {
+        width :70%;
+      }  margin :0;
+      dd {
+        font-size :1rem;
+        letter-spacing :0.05em;
+        margin :0;
+      }
     }
+  }
+}
+
+.require-wrapper {
+  padding-top :4rem;
+  h2 {
+    text-align :center;
   }
 }
 
@@ -56,9 +68,7 @@
   h2 {
     text-align :center;
   }
-  .row {
-    padding-top :1.5rem;
-  }
+
   .card {
     padding-top :1.5rem;
   }
@@ -66,10 +76,17 @@
 
 .atmosphere-wrapper {
   padding-top :3rem;
+  h2 {
+    padding-bottom :2rem;
+    text-align :center;
+  }
 }
 
 .form-wrapper {
   padding-top :4rem;
+  h2 {
+    text-align :center;
+  }
   form#mail_form * {
     font-weight :normal;
     margin :0;
@@ -182,7 +199,9 @@
 
 
   form#mail_form input[type='text'] , form#mail_form input[type='email'] , form#mail_form input[type='tel'] {
-    -webkit-appearance :none;
+    @include mq-down(md) {
+      max-width :100%;
+    }  -webkit-appearance :none;
     background :$white;
     border :0.0625rem solid $gray;
     font-family :inherit;
@@ -214,7 +233,9 @@
   }
 
   form#mail_form textarea {
-    -webkit-appearance :none;
+    @include mq-down(md) {
+      max-width :100%;
+    }  -webkit-appearance :none;
     background :$white;
     border :0.0625rem solid $gray;
     display :block;
@@ -227,6 +248,15 @@
     width :90%;
   }
 
+  form {
+    .form-inner {
+      @include mq-up(lg) {
+        align-items :center;
+        display :flex;
+        flex-direction :row;
+      }
+    }
+  }
 
   form#mail_form ul {
     list-style-type :none;
@@ -240,13 +270,25 @@
   form#mail_form input#company {
     width :60%;
   }
+  form#mail_form input#name {
+    width :100%;
+  }
+  form#mail_form input#read {
+    width :100%;
+  }
+
+  form #telephone {
+    width :100%;
+  }
+
+
 
   form#mail_form input#name_1 , form#mail_form input#name_2 , form#mail_form input#read_1 , form#mail_form input#read_2 , form#mail_form input#postal , form#mail_form input#phone , form#mail_form input#schedule {
-    width :30%;
+    width :40%;
   }
 
   form#mail_form input#mail_address , form#mail_form input#mail_address_confirm {
-    width :80%;
+    width :100%;
   }
 
   form#mail_form input#postal +a {
@@ -281,7 +323,6 @@
     border-radius :0;
     color :#FFFFFF;
     cursor :pointer;
-    display :block;
     font-family :inherit;
     font-size :1rem;
     font-weight :bold;
@@ -314,7 +355,7 @@
   /* -- responsive ----------------------------------------------------------------------------------------------------------------- */
 
   /* 1000pixel start */
-  @media screen and ( max-width: 62.5rem ) {
+  @media screen and ( max-width: 992px ) {
     form#mail_form {
       font-size :100%;
       width :95%;

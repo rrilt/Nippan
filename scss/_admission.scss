@@ -1,41 +1,46 @@
-.dltable {
-  background-color :#FFFFFF;
+.detail-container {
+  @include mq-down(lg) {
+    overflow :auto;
+  }  background-color :#FFFFFF;
   border :1px solid #CCCCCC;
   border-radius :4px;
-  margin :15px;
-  width :90%;
 
-  .row1 {
-    width :25%;
-  }
-  .row2 {
-    width :25%;
-  }
-  .row3 {
-    width :25%;
-  }
-  .row4 {
-    width :25%;
-  }
-
-
-  dl {
-    border-bottom :1px solid #CCCCCC;
+  .detail-inner {
+    @include mq-down(lg) {
+      width :900px;
+    }  border-bottom :1px solid #CCCCCC;
     display :flex;
     flex-wrap :wrap;
     font-size :12px;
     justify-content :left;
     text-align :center;
+
     &:last-child {
       border-bottom :none;
     }
+    &:first-child {
+      background-color :lighten($color :$black, $amount :90);
+    }
     dt {
-      background :#F2F2F2 none repeat scroll 0 0;
       color :#333333;
-      padding :10px 0;
+      margin :0;
+      padding :0.25rem 1rem;
     }
     dd {
-      padding :10px 0;
+      margin :0;
+      padding :0.5rem 2rem;
+    }
+    .column1 {
+      width :13%;
+    }
+    .column2 {
+      width :32%;
+    }
+    .column3 {
+      width :27%;
+    }
+    .column4 {
+      width :27%;
     }
   }
 }
@@ -66,21 +71,56 @@
 
 .admission-detail {
   padding-top :3rem;
+  h2 {
+    padding-bottom :2rem;
+    text-align :center;
+  }
 }
 
 .admission-flow {
   padding-top :4rem;
+  h2 {
+    text-align :center;
+  }
   .flow-list {
-    padding-top :3rem;
+    padding-top :2rem;
     li {
+      @include mq-down(md) {
+        text-align :left;
+      }  padding-bottom :1.5rem;
       position :relative;
+      text-align :center;
     }
     span {
       text-align :center;
+    }
+    h3 {
+      font-size :1.25rem;
+    }
+    .triangle {
+      margin :0 auto;
+    }
+    p {
+      margin-bottom :0.5rem;
     }
   }
 }
 
 .observation {
   padding-top :3rem;
+  h2 {
+    padding-bottom :2rem;
+    text-align :center;
+  }
+  p {
+    padding-bottom :3rem;
+  }
+}
+
+.triangle {
+  border-color :#000000 transparent transparent transparent;
+  border-style :solid;
+  border-width :15px 15px 0 15px;
+  height :0;
+  width :0;
 }

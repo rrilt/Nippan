@@ -1,12 +1,7 @@
 
-.season-collection {
-  display :flex;
-  flex-wrap :wrap;
-  .season-container {
-    @include mq-down(md) {
-      width :50%;
-    }  text-align :center;
-    width :25%;
+.season-container {
+  .season-inner {
+    text-align :center;
   }
 }
 
@@ -41,22 +36,24 @@
   padding-top :5rem;
 }
 .season-event {
-  @include mq-down(md) {
-    flex-direction :column;
-  }  align-items :center;
-  display :flex;
-  justify-content :space-between;
   padding-bottom :5rem;
 
   .season-grade {
-    @include mq-down(lg) {
+    @include mq-down(md) {
       padding-bottom :2rem;
+    }
+
+@include mq-up(md) {
+      padding-left :7.5%;
     }
   }
 
   .event {
     display :flex;
-    padding-bottom :1rem;
+    margin-bottom :0.5rem;
+    p {
+      margin-bottom :0.5rem;
+    }
   }
   .event-date {
     align-items :center;

@@ -1,6 +1,6 @@
 .boss-message {
   padding-top :3rem;
-  h1 {
+  h2 {
     text-align :center;
   }
   .container {
@@ -29,67 +29,87 @@
           top :50%;
           transform :translate(-50%,-50%);
         }
-      }  width :45%;
+      }
     }
     .message-container {
-      @include mq-down(md) {
-        width :100%;
-      }  width :50%;
+      .boss-text {
+        @include mq-down(md) {
+          font-size :0.875rem;
+        }
+      }
     }
   }
 }
 
-.list-container {
+.history-container {
   margin :0;
 
-  .data {
-    border-bottom :1px solid $black;
+
+  .history-inner {
+    @include mq-up(md) {
+      align-items :center;
+      display :flex;
+    }  border-bottom :1px solid $black;
     color :$black;
-    display :flex;
     font-size :0.75rem;
     padding :0.8rem 0;
-    h3 {
-      display :block;
-      font-size :0.75rem;
-      margin :0;
-      width :20%;
+
+    dt {
+      @include mq-up(md) {
+        text-align :center;
+        width :30%;
+      }  font-size :1.25rem;
+      margin :0 ;
     }
-    p {
-      font-weight :500;
-      letter-spacing :0.05em;
-      margin :0;
-      width :80%;
+    .dd-container {
+      @include mq-up(md) {
+        width :70%;
+      }  margin :0;
+      dd {
+        font-size :1rem;
+        letter-spacing :0.05em;
+        margin :0;
+      }
     }
   }
 }
 
 
-.history {
+.history-wrapper {
   padding-top :4rem;
-  h1 {
+  h2 {
     padding-bottom :1;
     text-align :center;
   }
 }
 .profile {
-  padding-top :4rem;
-  h1 {
+  @include mq-down(md) {
+    padding-bottom :4rem;
+  }
+
+@include mq-up(md) {
+    padding-bottom :3rem;
+  }  padding-top :4rem;
+  h2 {
     text-align :center;
   }
   .container-bottom {
-    @include mq-down(md) {
-      flex-direction :column;
-    }  display :flex;
-    justify-content :space-between;
     padding-top :2rem;
 
     .image-container {
       @include mq-down(md) {
-        width :100%;
         .ggmap {
           display :none;
         }
-      }  width :45%;
+      }
+
+@include mq-up(md) {
+        margin-bottom :2rem;
+        margin-top :1rem;
+      }  display :flex;
+      flex-direction :column;
+      justify-content :space-between;
+
       .ggmap {
         height :0;
         overflow :hidden;
@@ -105,24 +125,23 @@
       }
     }
     .info-container {
-      @include mq-down(md) {
-        width :100%;
-      }  width :50%;
-
       p {
         margin-bottom :0.5rem;
       }
-      .name-container {
+      .name-inner {
         border-bottom :1px solid $black;
         margin :0.8rem 0;
       }
-      .adress-container {
+      .address-inner {
         border-bottom :1px solid $black;
         margin :0.8rem 0;
       }
-      .contact-container {
+      .contact-inner {
         border-bottom :1px solid $black;
         margin :0.8rem 0;
+      }
+      .dd-container {
+        padding-top :0.5rem;
       }
     }
   }
@@ -133,7 +152,6 @@
     overflow :hidden;
     padding-bottom :66%;
     position :relative;
-
     iframe {
       height :100%;
       left :0;
