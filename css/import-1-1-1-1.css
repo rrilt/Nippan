@@ -1018,29 +1018,41 @@ footer .footer-copyright {
   }
 }
 
-.season-event .event {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 0.5rem;
+.season-event .event-container {
+  margin: 0;
 }
 
-.season-event .event p {
-  margin-bottom: 0.5rem;
+.season-event .event-container .season-event {
+  padding-bottom: 3rem;
 }
 
-.season-event .event-date {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 30%;
+.season-event .event-container .event-inner {
+  color: #000000;
+  font-size: 0.75rem;
+  padding: 0.8rem 0;
 }
 
-.season-event .event-name {
-  width: 65%;
+@media screen and (min-width: 768px) {
+  .season-event .event-container .event-inner {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.season-event .event-container .event-inner dt {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.season-event .event-container .event-inner .dd-container {
+  margin: 0;
+}
+
+.season-event .event-container .event-inner .dd-container dd {
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  margin: 0;
 }
 
 .detail-container {

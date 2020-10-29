@@ -48,19 +48,31 @@
     }
   }
 
-  .event {
-    display :flex;
-    margin-bottom :0.5rem;
-    p {
-      margin-bottom :0.5rem;
+  .event-container {
+    margin :0;
+    .season-event {
+      padding-bottom :3rem;
     }
-  }
-  .event-date {
-    align-items :center;
-    display :flex;
-    width :30%;
-  }
-  .event-name {
-    width :65%;
+
+    .event-inner {
+      @include mq-up(md) {
+        align-items :center;
+      }  color :$black;
+      font-size :0.75rem;
+      padding :0.8rem 0;
+      dt {
+        font-size :1.25rem;
+        margin :0 ;
+      }
+      .dd-container {
+        @include mq-up(md) {
+        }  margin :0;
+        dd {
+          font-size :1rem;
+          letter-spacing :0.05em;
+          margin :0;
+        }
+      }
+    }
   }
 }
