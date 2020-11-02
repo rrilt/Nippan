@@ -1,5 +1,7 @@
 .news-wrapper {
   background-color :$orange;
+  padding-bottom :3rem;
+  padding-top :3rem;
 
   .news-container {
     display :flex;
@@ -19,7 +21,7 @@
         display :flex;
         flex-direction :column;
         margin :0 auto;
-      }  padding-bottom :0.625rem;
+      }  margin-bottom :0rem;
       padding-top :1.5rem;
 
 
@@ -79,6 +81,8 @@
 }
 
 .contents-wrapper {
+  padding-bottom :3rem;
+  padding-top :3rem;
   .contents-container {
     display :flex;
     flex-direction :column;
@@ -110,7 +114,7 @@
           .image {
             @include mq-down(sm) {
               padding-top :50%;
-            }  margin :0 0 1rem;
+            }  margin :0 0 2rem;
             overflow :hidden;
             padding-top :75%;
             position :relative;
@@ -173,6 +177,7 @@
             padding :1.875rem;
             position :absolute;
             right :0;
+            text-align :center;
             transition :opacity 0.2s ease, bottom 0.2s ease;
             word-break :break-all;
           }

@@ -1,5 +1,6 @@
 .feature-wrapper {
-  padding-top :4rem;
+  padding-bottom :2rem;
+  padding-top :2rem;
   .feature-contents {
     @include mq-up(md) {
       flex-direction :row;

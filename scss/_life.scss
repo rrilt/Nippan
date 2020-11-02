@@ -32,37 +32,90 @@
 
 .opentime-wrapper {
   margin :0 auto;
+  padding-bottom :2rem;
+  padding-top :3rem;
   text-align :center;
   .container {
     max-width :800px;
   }
 }
 
-.grade-container {
-  .grade-inner {
+.grade-wrapper {
+  .grade-container {
+    @include mq-up(sm) {
+      max-width :720px;
+      width :100%;
+    }
+    .grade-inner {
+      text-align :center;
+    }
+  }
+}
+
+@mixin grade($size) {
+  border-radius :50%;
+  display :inline-block;
+  height :$size;
+  position :relative;
+  width :$size;
+  p {
+    color :$white;
+    display :inline-block;
+    left :0;
+    position :absolute;
     text-align :center;
+    top :50%;
+    -webkit-transform :translateY(-50%);
+            transform :translateY(-50%);
+    width :$size;
   }
 }
 
 .grade {
-  background :$orange;
-  border-radius :50%;
-  display :inline-block;
-  height :80px;
-  position :relative;
-  width :80px;
+  @include grade(60px);
 }
 
-.grade p {
-  color :$white;
-  display :inline-block;
-  left :0;
-  position :absolute;
-  text-align :center;
-  top :50%;
-  -webkit-transform :translateY(-50%);
-          transform :translateY(-50%);
-  width :80px;
+.grade-big {
+  @include grade(120px);
+}
+
+#grade-1 {
+  background-color :$yellow;
+}
+#grade-2 {
+  background-color :$blue;
+}
+
+#grade-3 {
+  background-color :$red;
+}
+
+#grade-4 {
+  background-color :$water;
+}
+
+#schedule-1 {
+  span {
+    color :$yellow;
+  }
+}
+
+#schedule-2 {
+  span {
+    color :$blue;
+  }
+}
+
+#schedule-3 {
+  span {
+    color :$red;
+  }
+}
+
+#schedule-4 {
+  span {
+    color :$water;
+  }
 }
 
 
@@ -72,12 +125,14 @@
 
 
 .schedule-wrapper {
+  padding-bottom :2rem;
   padding-top :5rem;
 }
 
 
 .schedule-container {
   margin :0;
+
   .schedule {
     padding-bottom :3rem;
   }
@@ -89,8 +144,11 @@
     font-size :0.75rem;
     padding :0.8rem 0;
     dt {
-      font-size :1.25rem;
-      margin :0 ;
+      @include mq-down(md) {
+        text-align :center;
+      }  font-size :1rem;
+      margin :0 auto;
+      text-align :right;
     }
     .dd-container {
       @include mq-up(md) {

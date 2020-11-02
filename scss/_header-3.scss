@@ -19,12 +19,19 @@ header {
     .header-logo {
       @include mq-down(sm) {
         width :192px;
-      }  align-items :center;
+      }
+
+@include mq-down(lg) {
+        width :200px;
+      }
+
+@include mq-up(lg) {
+        padding-bottom :1rem;
+        padding-top :1.5rem;
+      }align-items :center;
       display :flex;
       justify-content :center;
-      padding-left :0.625rem;
-      padding-top :0.9375rem;
-      width :320px;
+      width :240px;
     }
     #nav-toggle {
       @include mq-down(lg) {
@@ -33,7 +40,7 @@ header {
         height :2rem;
         position :fixed;
         right :1rem;
-        top :1urem;
+        top :1rem;
         z-index :10000;
       }
 
@@ -102,9 +109,10 @@ header {
 @include mq-up(lg) {
         display :flex;
         flex-direction :column;
-        margin-top :0.625rem;
+        justify-content :center;
         padding-left :auto;
         padding-right :0;
+        width :100%;
       }
 
       a {
@@ -118,7 +126,7 @@ header {
           &:hover {
             color :#666666;
           }
-        }
+        }font-size :0.875rem;
       }
       ul {
         @include mq-down(lg) {
@@ -143,21 +151,30 @@ header {
             transition :transform 0.6s ease, opacity 0.2s ease;
 
             &:nth-child(2) {
-              transition-delay :0.15s;
+              transition-delay :0.10s;
             }
             &:nth-child(3) {
-              transition-delay :0.3s;
+              transition-delay :0.2s;
             }
             &:nth-child(4) {
-              transition-delay :0.45s;
+              transition-delay :0.3s;
             }
             &:nth-child(5) {
-              transition-delay :0.6s;
+              transition-delay :0.4s;
             }
             &:nth-child(6) {
-              transition-delay :0.75s;
+              transition-delay :0.5s;
             }
             &:nth-child(7) {
+              transition-delay :0.6s;
+            }
+            &:nth-child(8) {
+              transition-delay :0.7s;
+            }
+            &:nth-child(9) {
+              transition-delay :0.8s;
+            }
+            &:nth-child(10) {
               transition-delay :0.9s;
             }
           }
@@ -165,9 +182,8 @@ header {
 @include mq-up(lg) {
             padding-left :0.75rem;
             padding-right :0.75rem;
-            text-align :center;
             white-space :nowrap;
-            width :100%;
+
             a {
               color :$white;
               position :relative;

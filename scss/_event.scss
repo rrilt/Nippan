@@ -5,26 +5,48 @@
   }
 }
 
-.season {
-  background :$orange;
+@mixin season($size) {
   border-radius :50%;
   display :inline-block;
-  height :80px;
+  height :$size;
   position :relative;
-  width :80px;
+  width :$size;
+  p {
+    color :$white;
+    display :inline-block;
+    left :0;
+    position :absolute;
+    text-align :center;
+    top :50%;
+    -webkit-transform :translateY(-50%);
+            transform :translateY(-50%);
+    width :$size;
+  }
 }
 
-.season p {
-  color :$white;
-  display :inline-block;
-  left :0;
-  position :absolute;
-  text-align :center;
-  top :50%;
-  -webkit-transform :translateY(-50%);
-          transform :translateY(-50%);
-  width :80px;
+.season {
+  @include season(60px);
 }
+
+.season-big {
+  @include season(100px);
+}
+
+
+#spring {
+  background-color :$spring;
+}
+
+#summer {
+  background-color :$summer;
+}
+#autumn {
+  background-color :$autumn;
+}
+#winter {
+  background-color :$winter;
+}
+
 
 
 .season-wrapper {
@@ -47,32 +69,36 @@
       padding-left :7.5%;
     }
   }
-
-  .event-container {
-    margin :0;
-    .season-event {
-      padding-bottom :3rem;
-    }
-
-    .event-inner {
-      @include mq-up(md) {
-        align-items :center;
-      }  color :$black;
-      font-size :0.75rem;
-      padding :0.8rem 0;
-      dt {
-        font-size :1.25rem;
-        margin :0 ;
-      }
-      .dd-container {
-        @include mq-up(md) {
-        }  margin :0;
-        dd {
-          font-size :1rem;
-          letter-spacing :0.05em;
-          margin :0;
-        }
+  .schedule-inner {
+    padding-bottom :1rem;
+    .row {
+      .col-3 {
+        padding :0;
       }
     }
+  }
+
+  dt {
+    @include mq-down(md) {
+      text-align :center;
+    }  font-size :1.2rem;
+    margin-left :auto;
+    text-align :right;
+  }
+  dd {
+    font-size :1.2rem;
+  }
+}
+
+.carousel {
+  @include mq-up(md) {
+    display :none;
+  }
+}
+
+
+.collection {
+  @include mq-down(md) {
+    display :none;
   }
 }

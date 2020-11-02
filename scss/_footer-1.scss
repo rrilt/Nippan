@@ -3,7 +3,7 @@ footer {
   color :$white;
   overflow :hidden;
   padding-bottom :1rem;
-  padding-top :1.5rem;
+  padding-top :3rem;
   position :relative;
   width :100%;
   .footer-inner {
@@ -81,6 +81,7 @@ footer {
       }
       li {
         line-height :2.5;
+        text-align :center;
         a {
           color :$white;
           font-size :0.75rem;

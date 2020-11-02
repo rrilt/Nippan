@@ -4,7 +4,11 @@ li {
 
 a {
   text-decoration :none;
+  &:hover {
+    text-decoration :none !important;
+  }
 }
+
 
 img {
   width :100%;

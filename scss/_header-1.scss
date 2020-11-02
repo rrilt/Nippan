@@ -15,10 +15,14 @@ header {
     .header-logo {
       @include mq-down(sm) {
         width :192px;
-      }  align-items :center;
+      }
+
+@include mq-down(lg) {
+        width :200px;
+      }align-items :center;
       display :flex;
       justify-content :center;
-      width :320px;
+      width :240px;
     }
     #nav-toggle {
       @include mq-down(lg) {
@@ -99,6 +103,7 @@ header {
         justify-content :center;
         padding-left :auto;
         padding-right :0;
+        width :100%;
       }
 
       a {
@@ -112,7 +117,7 @@ header {
           &:hover {
             color :#666666;
           }
-        }
+        }  font-size :0.875rem;
       }
       ul {
         @include mq-down(lg) {
