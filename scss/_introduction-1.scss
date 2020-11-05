@@ -1,6 +1,7 @@
 .boss-message {
   padding-top :3rem;
   h2 {
+    font-family :$font-x;
     text-align :center;
   }
   .container {
@@ -30,8 +31,30 @@
           transform :translate(-50%,-50%);
         }
       }
+
+@include mq-up(md) {
+        margin :0 0 1rem;
+        overflow :hidden;
+        padding-top :50%;
+        position :relative;
+        text-align :center;
+        width :100%;
+
+        img {
+          height :100%;
+          left :50%;
+          object-fit :cover;
+          object-position :0px -1rem;
+          position :absolute;
+          top :50%;
+          transform :translate(-50%,-50%);
+        }
+      }
     }
     .message-container {
+      display :flex;
+      flex-direction :column;
+      justify-content :center;
       .boss-text {
         @include mq-down(md) {
           font-size :0.875rem;
@@ -78,6 +101,7 @@
 .history-wrapper {
   padding-top :4rem;
   h2 {
+    font-family :$font-x;
     padding-bottom :1;
     text-align :center;
   }
@@ -92,6 +116,7 @@
   }  padding-top :4rem;
 
   h2 {
+    font-family :$font-x;
     text-align :center;
   }
   .container-bottom {

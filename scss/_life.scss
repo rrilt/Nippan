@@ -1,6 +1,9 @@
 .opentime-container {
   margin :0;
   padding-top :1rem;
+  h2 {
+    font-family :$font-x;
+  }
   .opentime-inner {
     @include mq-up(md) {
       align-items :center;
@@ -61,6 +64,7 @@
   p {
     color :$white;
     display :inline-block;
+    font-family :$font-x;
     left :0;
     position :absolute;
     text-align :center;
@@ -77,6 +81,9 @@
 
 .grade-big {
   @include grade(120px);
+  p {
+    font-size :1.5rem;
+  }
 }
 
 #grade-1 {
@@ -134,7 +141,16 @@
   margin :0;
 
   .schedule {
-    padding-bottom :3rem;
+    padding-bottom :5rem;
+  }
+
+  .schedule-contents {
+    border-bottom :0.05rem solid $gray;
+    margin-bottom :0.5rem;
+    padding-bottom :0.5rem;
+    &:last-child {
+      border :none;
+    }
   }
 
   .schedule-inner {
@@ -143,12 +159,18 @@
     }  color :$black;
     font-size :0.75rem;
     padding :0.8rem 0;
+    .col-3 {
+      padding :0;
+      width :100%;
+    }
+    .col-9 {
+      padding :0;
+      width :100%;
+    }
     dt {
-      @include mq-down(md) {
-        text-align :center;
-      }  font-size :1rem;
+      font-size :1rem;
       margin :0 auto;
-      text-align :right;
+      text-align :center;
     }
     .dd-container {
       @include mq-up(md) {

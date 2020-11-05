@@ -24,11 +24,11 @@
     dt {
       color :#333333;
       margin :0;
-      padding :0.25rem 1rem;
+      padding :1rem 1rem 0.25rem;
     }
     dd {
       margin :0;
-      padding :0.5rem 2rem;
+      padding :1rem 2rem;
     }
     .column1 {
       width :13%;
@@ -72,6 +72,7 @@
 .admission-detail {
   padding-top :3rem;
   h2 {
+    font-family :$font-x;
     padding-bottom :2rem;
     text-align :center;
   }
@@ -80,40 +81,115 @@
 .admission-flow {
   padding-top :4rem;
   h2 {
+    font-family :$font-x;
     text-align :center;
   }
   .flow-list {
     padding-top :2rem;
+    .flow-contents {
+      background-color :lighten($color :$gray, $amount :50);
+      margin :1rem 2rem;
+      padding-bottom :1rem;
+      padding-top :1rem;
+    }
     li {
       @include mq-down(md) {
         text-align :left;
-      }  padding-bottom :1.5rem;
-      position :relative;
-      text-align :center;
+      }  position :relative;
+      text-align :left;
     }
     span {
       text-align :center;
     }
     h3 {
       font-size :1.25rem;
+      margin-bottom :0;
+      padding-left :1rem;
+    }
+    p {
+      margin-top :0.5rem;
+      padding-left :1rem;
+      padding-right :1rem;
     }
     .triangle {
       margin :0 auto;
-    }
-    p {
-      margin-bottom :0.5rem;
     }
   }
 }
 
 .observation {
+  padding-bottom :3rem;
   padding-top :3rem;
+  .image {
+    @include mq-down(sm) {
+      padding-top :50%;
+    }  margin :0 0 2rem;
+    overflow :hidden;
+    padding-top :60%;
+    position :relative;
+    text-align :center;
+
+    img {
+      height :100%;
+      left :50%;
+      object-fit :cover;
+      position :absolute;
+      top :50%;
+      transform :translate(-50%,-50%);
+    }
+
+    .mask {
+      background-color :rgba($color :#000000, $alpha :0.4);
+      height :100%;
+      left :0;
+      opacity :0;
+      position :absolute;
+      top :0;
+      width :100%;
+    }
+  }
+  .observation-contents {
+    padding-bottom :3rem;
+  }
+  .observation-text {
+    align-items :center;
+    display :flex;
+    flex-direction :column;
+    justify-content :center;
+  }
+
   h2 {
+    font-family :$font-x;
     padding-bottom :2rem;
     text-align :center;
   }
-  p {
-    padding-bottom :3rem;
+
+  .observation-inner {
+    @include mq-up(md) {
+      align-items :center;
+      display :flex;
+    }  border-bottom :1px solid $black;
+    color :$black;
+    font-size :0.75rem;
+    padding :0.8rem 0;
+
+    dt {
+      @include mq-up(md) {
+        text-align :center;
+        width :30%;
+      }  font-size :1.25rem;
+      margin :0 ;
+    }
+    .dd-container {
+      @include mq-up(md) {
+        width :70%;
+      }  margin :0;
+      dd {
+        font-size :1rem;
+        letter-spacing :0.05em;
+        margin :0;
+      }
+    }
   }
 }
 

@@ -1,6 +1,7 @@
 .boss-message {
   padding-top :3rem;
   h2 {
+    font-family :$font-x;
     text-align :center;
   }
   .container {
@@ -79,6 +80,7 @@
 .history-wrapper {
   padding-top :4rem;
   h2 {
+    font-family :$font-x;
     padding-bottom :1;
     text-align :center;
   }
@@ -93,6 +95,7 @@
   }  padding-top :4rem;
 
   h2 {
+    font-family :$font-x;
     text-align :center;
   }
   .container-bottom {

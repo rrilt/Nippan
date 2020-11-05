@@ -82,9 +82,17 @@
 .contents-wrapper {
   padding-bottom :3rem;
   padding-top :3rem;
+  .row {
+    a {
+      @include mq-down(md) {
+        padding-top :2rem;
+      }
+    }
+  }
   .contents-inner {
     background-color :$white;
     position :relative;
+
 
     &:hover {
       .shadow {

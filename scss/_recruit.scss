@@ -27,12 +27,16 @@
 
 .require-container {
   margin :0;
+  h2 {
+    font-family :$font-x;
+  }
   .require-inner {
     @include mq-up(md) {
       align-items :center;
       display :flex;
     }  border-bottom :1px solid $black;
     color :$black;
+    font-family :$font-x;
     font-size :0.75rem;
     padding :0.8rem 0;
 
@@ -59,13 +63,16 @@
 .require-wrapper {
   padding-top :4rem;
   h2 {
+    padding-bottom :2rem;
     text-align :center;
   }
 }
 
 .message-wrapper {
+  font-family :$font-x;
   padding-top :4rem;
   h2 {
+    padding-bottom :2rem;
     text-align :center;
   }
 
@@ -77,14 +84,17 @@
 .atmosphere-wrapper {
   padding-top :3rem;
   h2 {
+    font-family :$font-x;
     padding-bottom :2rem;
     text-align :center;
   }
 }
 
 .form-wrapper {
+  font-family :$font-x;
   padding-top :4rem;
   h2 {
+    font-family :$font-x;
     text-align :center;
   }
   form#mail_form * {

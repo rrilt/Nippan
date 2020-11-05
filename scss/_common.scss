@@ -53,6 +53,11 @@ img {
   }
 }
 
+body {
+  font-family :'Noto Sans JP', sans-serif;
+}
+
+$font-x :'Kosugi Maru', sans-serif;
 
 .head-title {
   @include mq-down(md) {
@@ -69,10 +74,15 @@ img {
     }  background-color :$white;
     color :$black;
     display :inline-block;
+    font-family :$font-x;
     font-size :1.25rem;
     letter-spacing :0.2em;
     margin :auto auto auto auto;
     padding :1rem 3.5rem;
   }
+}
+
+.breadcrumb {
+  font-family :$font-x;
 }
 

@@ -4,10 +4,12 @@
   padding-top :3rem;
   h2 {
     color :$white;
+    font-family :$font-x;
     text-align :center;
   }
   p {
     color :$white;
+    font-family :$font-x;
     line-height :300%;
     padding-bottom :4rem;
     padding-top :2rem;
@@ -27,6 +29,7 @@
   padding-bottom :4rem;
   padding-top :4rem;
   h2 {
+    font-family :$font-x;
     text-align :center;
   }
   .policy-point {
@@ -35,6 +38,34 @@
   #point-2 .row {
     @include mq-up(md) {
       flex-direction :row-reverse;
+    }
+  }
+  .point-img {
+    @include mq-down(sm) {
+      padding-top :50%;
+    }  margin :0 0 2rem;
+    overflow :hidden;
+    padding-top :75%;
+    position :relative;
+    text-align :center;
+
+    img {
+      height :100%;
+      left :50%;
+      object-fit :cover;
+      position :absolute;
+      top :50%;
+      transform :translate(-50%,-50%);
+    }
+
+    .mask {
+      background-color :rgba($color :#000000, $alpha :0.4);
+      height :100%;
+      left :0;
+      opacity :0;
+      position :absolute;
+      top :0;
+      width :100%;
     }
   }
 }

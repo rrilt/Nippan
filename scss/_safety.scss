@@ -23,9 +23,13 @@
     }
     .text-container {
       @include mq-up(md) {
+        margin :auto 0;
         width :45%;
       }
     }
+  }
+  h2 {
+    font-family :$font-xu;
   }
 }
 
