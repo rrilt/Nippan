@@ -1,71 +1,71 @@
+#feature-head {
+  background-image :url(/asset/feature3.jpg);
+  background-size :cover;
+}
+
 .feature-wrapper {
   padding-bottom :2rem;
   padding-top :2rem;
-  .feature-contents {
-    @include mq-up(md) {
-      flex-direction :row;
-      justify-content :space-between;
-    }
-
-@include mq-down(md) {
-      flex-direction :column;
-    }  display :flex;
-    padding-top :2rem;
-
-    .image-container {
+  .image-container {
+    .image {
       @include mq-down(md) {
-        padding-top :1.5rem;
+        padding-top :50%;
       }
 
 @include mq-up(md) {
-        width :45%;
+        padding-top :150%;
       }
-
-      .image {
-        @include mq-down(md) {
-          padding-top :50%;
-        }
-
-@include mq-up(md) {
-          padding-top :150%;
-        }
 
 @include mq-up(lg) {
-          padding-top :100%;
-        } margin :0 0 2rem;
-        overflow :hidden;
-        position :relative;
-        text-align :center;
-
-        img {
-          height :100%;
-          left :50%;
-          object-fit :cover;
-          position :absolute;
-          top :50%;
-          transform :translate(-50%,-50%);
-        }
-
-        .mask {
-          background-color :rgba($color :#000000, $alpha :0.4);
-          height :100%;
-          left :0;
-          opacity :0;
-          position :absolute;
-          top :0;
-          width :100%;
-        }
+        padding-top :130%;
       }
-    }
-    .text-container {
-      @include mq-up(md) {
-        width :45%;
+
+@include mq-up(xl) {
+        padding-top :100%;
+      } margin :0 0 2rem;
+      overflow :hidden;
+      position :relative;
+      text-align :center;
+
+      img {
+        height :100%;
+        left :50%;
+        object-fit :cover;
+        position :absolute;
+        top :50%;
+        transform :translate(-50%,-50%);
+      }
+
+      .mask {
+        background-color :rgba($color :#000000, $alpha :0.4);
+        height :100%;
+        left :0;
+        opacity :0;
+        position :absolute;
+        top :0;
+        width :100%;
       }
     }
   }
   h2 {
-    border-left :4px solid $black;
+    @include mq-down(lg) {
+      margin-bottom :1.5rem;
+    }  border-left :4px solid $black;
     font-family :$font-x;
+    margin-bottom :2.5rem;
     padding-left :1.5rem;
+  }
+  .feature-title {
+    @include mq-down(lg) {
+      font-size :1.2rem;
+      margin-bottom :1.5rem;
+    }  font-family :$font-x;
+    font-size :1.5rem;
+    margin-bottom :2.5rem;
+  }
+  .feature-text {
+    @include mq-down(lg) {
+      font-size :0.875rem;
+    }  line-height :1.5;
   }
 }

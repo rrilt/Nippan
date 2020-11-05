@@ -1,7 +1,17 @@
+#facility-head {
+  background-image :url(/asset/facility3.png);
+  background-size :cover;
+}
+
 .facility-wrapper {
   padding-bottom :3rem;
   padding-top :3rem;
   .facility-container {
+    h2 {
+      font-family :$font-x;
+      padding-bottom :2rem;
+      text-align :center;
+    }
     .facility {
       @include mq-up(md) {
         padding-top :1.5rem;

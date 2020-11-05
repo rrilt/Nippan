@@ -50,6 +50,12 @@ $sans: 'Titillium Web', sans-serif
 
   h4
     font-size: 20px
+    @include mq-down(md)
+      max-width: 490px
+    @include mq-down(sm)
+      max-width: 450px
+    @include mq-down(xs)
+      max-width: 330px    
 
   p
     color: $black
@@ -104,6 +110,10 @@ $sans: 'Titillium Web', sans-serif
         transform: translate( -6px , 0 )        
         right: 0
         margin-top: 4px
+        @include mq-down(sm)
+          margin-top: 32px
+        @include mq-down(md)
+          margin-top: 24px
 
         &:before , &:after
           content: ""

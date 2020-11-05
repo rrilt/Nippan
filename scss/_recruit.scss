@@ -1,3 +1,13 @@
+.atmosphere-wrapper {
+  padding-top :3rem;
+  h2 {
+    font-family :$font-x;
+    padding-bottom :2rem;
+    text-align :center;
+  }
+}
+
+
 .image {
   margin :0 0 1rem;
   overflow :hidden;
@@ -60,8 +70,13 @@
   }
 }
 
+#recruit-head {
+  background-image :url(/asset/winter3.jpg);
+  background-size :cover;
+}
+
 .require-wrapper {
-  padding-top :4rem;
+  padding-top :6rem;
   h2 {
     padding-bottom :2rem;
     text-align :center;
@@ -70,25 +85,26 @@
 
 .message-wrapper {
   font-family :$font-x;
-  padding-top :4rem;
+  padding-top :6rem;
   h2 {
     padding-bottom :2rem;
     text-align :center;
+  }
+  .card-subtitle {
+    color :$black;
+    font-weight :bold;
+  }
+  .card-text {
+    padding-top :0.5rem;
   }
 }
 
-.atmosphere-wrapper {
-  padding-top :3rem;
-  h2 {
-    font-family :$font-x;
-    padding-bottom :2rem;
-    text-align :center;
-  }
-}
 
 .form-wrapper {
   font-family :$font-x;
-  padding-top :4rem;
+  padding-bottom :3rem;
+  padding-top :6rem;
+
   h2 {
     font-family :$font-x;
     text-align :center;
@@ -100,10 +116,10 @@
   }
 
   form#mail_form {
-    background :#FFFFFF;
+    background :$white ;
     font-size :95%;
     line-height :1.8;
-    margin :3.125rem auto;
+    margin :1.5rem auto 3rem;
     padding :0.625rem 0;
     width :60rem;
   }
@@ -323,7 +339,7 @@
   }
 
   form #form_submit_button {
-    background-color :$navy;
+    background-color :$a-color;
     border :none;
     border-radius :0;
     color :#FFFFFF;
@@ -349,7 +365,7 @@
   }
 
   form #form_submit_button:hover {
-    background-color :$orange;
+    background-color :$m-color;
   }
 
 

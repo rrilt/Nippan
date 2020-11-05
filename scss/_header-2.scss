@@ -1,5 +1,5 @@
 header {
-  background-color :rgba($orange,0);
+  background-color :rgba($m-color,0);
   font-family :$font-x;
   height :4rem;
   left :0;
@@ -119,6 +119,11 @@ header {
             color :#666666;
           }
         }
+
+@include mq-up(xl) {
+          font-size :1rem;
+        }  font-size :0.875rem;
+        
       }
       ul {
         @include mq-down(lg) {

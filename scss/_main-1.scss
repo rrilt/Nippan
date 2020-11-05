@@ -1,5 +1,5 @@
 .news-wrapper {
-  background-color :$orange;
+  background-color :$m-color;
   padding-bottom :3rem;
   padding-top :3rem;
 
@@ -86,24 +86,6 @@
   .contents-container {
     display :flex;
     flex-direction :column;
-    .title-en {
-      color :$orange;
-      font-family :'Noto Serif JP', serif;
-      font-size :1rem;
-      font-weight :normal;
-      margin :0;
-      padding-top :1.25rem;
-      text-align :center;
-    }
-    .title-jp {
-      font-family :'Noto Serif JP', serif;
-      font-size :2rem;
-      font-weight :bold;
-      margin :0;
-      padding-bottom :3.375rem;
-      padding-top :1.25rem;
-      text-align :center;
-    }
     .list-panel {
       overflow :hidden;
       .list-panel-items {
@@ -133,7 +115,7 @@
               background-color :rgba($color :#000000, $alpha :0.4);
               height :100%;
               left :0;
-              opacity :0;
+              opacity :1;
               position :absolute;
               top :0;
               width :100%;
@@ -146,7 +128,7 @@
             left :50%;
             position :absolute;
             text-align :center;
-            top :50%;
+            top :45%;
             transform :translate(-50%, -50%);
             width :100%;
             .box-en {
@@ -160,9 +142,13 @@
                 font-size :1.4rem;
               }
 
+@include mq-up(xl) {
+                font-size :1.5rem;
+              }
+
 @include mq-down(sm) {
                 font-size :1.2rem;
-              }  font-size :1.5rem;
+              }  font-size :1.2rem;
               margin :0;
             }
           }

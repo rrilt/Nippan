@@ -1,5 +1,5 @@
 header {
-  background-color :rgba($orange,0);
+  background-color :rgba($m-color,0);
   font-family :$font-x;
   height :4rem;
   left :0;
@@ -127,7 +127,11 @@ header {
           &:hover {
             color :#666666;
           }
-        }font-size :0.875rem;
+        }
+
+@include mq-up(lg) {
+          font-size :1rem;
+        } font-size :0.875rem;
       }
       ul {
         @include mq-down(lg) {
@@ -136,7 +140,7 @@ header {
 
 @include mq-up(lg) {
           align-items :center;
-          background-color :$orange;
+          background-color :$m-color;
           display :flex;
           font-weight :normal;
           justify-content :space-around;

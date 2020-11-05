@@ -1,5 +1,5 @@
 header {
-  background-color :$orange;
+  background-color :$m-color;
   font-family :$font-x;
   height :4rem;
   left :0;
@@ -118,7 +118,10 @@ header {
           &:hover {
             color :#666666;
           }
-        }  font-size :0.875rem;
+        }  
+@include mq-up(xl) {
+          font-size :1rem;
+        } font-size :0.875rem;
       }
       ul {
         @include mq-down(lg) {
