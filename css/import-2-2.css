@@ -143,6 +143,15 @@ img {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .open header .header-inner #nav-toggle:hover span:nth-child(1) {
+    top: 0.9375rem;
+  }
+  .open header .header-inner #nav-toggle:hover span:nth-child(3) {
+    top: 0.9375rem;
+  }
+}
+
 body {
   font-family: 'Noto Sans JP', sans-serif;
 }
@@ -1324,7 +1333,9 @@ footer .footer-inner .footer-bottom {
 }
 
 .feature-wrapper h2 {
+  border-left: 4px solid #000000;
   font-family: "Kosugi Maru", sans-serif;
+  padding-left: 1.5rem;
 }
 
 .opentime-container {
@@ -1599,9 +1610,9 @@ footer .footer-inner .footer-bottom {
 .season-big {
   border-radius: 50%;
   display: inline-block;
-  height: 100px;
+  height: 120px;
   position: relative;
-  width: 100px;
+  width: 120px;
 }
 
 .season-big p {
@@ -1614,7 +1625,11 @@ footer .footer-inner .footer-bottom {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 100px;
+  width: 120px;
+}
+
+.season-big p {
+  font-size: 1.5rem;
 }
 
 #spring {
@@ -2021,7 +2036,9 @@ footer .footer-inner .footer-bottom {
 }
 
 .safety-wrapper h2 {
+  border-left: 4px solid #000000;
   font-family: "Kosugi Maru", sans-serif;
+  padding-left: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -2134,10 +2151,6 @@ footer .footer-inner .footer-bottom {
 .message-wrapper h2 {
   padding-bottom: 2rem;
   text-align: center;
-}
-
-.message-wrapper .card {
-  padding-top: 1.5rem;
 }
 
 .atmosphere-wrapper {
@@ -2273,7 +2286,6 @@ footer .footer-inner .footer-bottom {
   font-family: inherit;
   font-size: 100%;
   margin-top: 0.4375rem;
-  max-width: 90%;
   padding: 0.4375rem 2%;
 }
 

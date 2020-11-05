@@ -49,6 +49,16 @@ img {
           transition :transform 1s ease, opacity 0.9s ease  ;
         }
       }
+      #nav-toggle {
+        @include mq-down(lg) {
+          &:hover span:nth-child(1) {
+            top :0.9375rem;
+          }
+          &:hover span:nth-child(3) {
+            top :0.9375rem ;
+          }
+        }
+      }
     }
   }
 }
