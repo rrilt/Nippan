@@ -899,7 +899,7 @@ footer .footer-copyright {
 }
 
 #introduction-head {
-  background-image: url(/asset/introduction.jpg);
+  background-image: url(asset/introduction.jpg);
   background-size: cover;
 }
 
@@ -1191,7 +1191,7 @@ footer .footer-copyright {
 }
 
 #education-head {
-  background-image: url(/asset/summer2.jpg) !important;
+  background-image: url(asset/summer2.jpg) !important;
   background-size: cover;
 }
 
@@ -1217,7 +1217,7 @@ footer .footer-copyright {
 }
 
 .philosophy-wrapper {
-  background-image: url(/asset/education_background.jpg);
+  background-image: url(asset/education_background.jpg);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1289,7 +1289,7 @@ footer .footer-copyright {
 }
 
 #feature-head {
-  background-image: url(/asset/feature3.jpg);
+  background-image: url(asset/feature3.jpg);
   background-size: cover;
 }
 
@@ -1387,7 +1387,7 @@ footer .footer-copyright {
 }
 
 #life-head {
-  background-image: url(/asset/life.jpg);
+  background-image: url(asset/life.jpg);
   background-size: cover;
 }
 
@@ -1614,7 +1614,7 @@ footer .footer-copyright {
 }
 
 #facility-head {
-  background-image: url(/asset/facility3.png);
+  background-image: url(asset/facility3.png);
   background-size: cover;
 }
 
@@ -1647,7 +1647,7 @@ footer .footer-copyright {
 }
 
 #event-head {
-  background-image: url(/asset/event.jpg);
+  background-image: url(asset/event.jpg);
   background-size: cover;
 }
 
@@ -1778,7 +1778,7 @@ footer .footer-copyright {
 }
 
 #admission-head {
-  background-image: url(/asset/admission.png);
+  background-image: url(asset/admission.png);
   background-size: cover;
 }
 
@@ -2064,7 +2064,7 @@ footer .footer-copyright {
 }
 
 #safety-head {
-  background-image: url(/asset/firstview.jpg);
+  background-image: url(asset/firstview.jpg);
   background-size: cover;
 }
 
@@ -2177,35 +2177,6 @@ footer .footer-copyright {
   text-align: center;
 }
 
-.image {
-  margin: 0 0 1rem;
-  overflow: hidden;
-  padding-top: 75%;
-  position: relative;
-  text-align: center;
-}
-
-.image img {
-  height: 100%;
-  left: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.image .mask {
-  background-color: rgba(0, 0, 0, 0.4);
-  height: 100%;
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
 .require-container {
   margin: 0;
 }
@@ -2262,7 +2233,7 @@ footer .footer-copyright {
 }
 
 #recruit-head {
-  background-image: url(/asset/winter3.jpg);
+  background-image: url(asset/winter3.jpg);
   background-size: cover;
 }
 
@@ -2292,6 +2263,35 @@ footer .footer-copyright {
 
 .message-wrapper .card-text {
   padding-top: 0.5rem;
+}
+
+.message-wrapper .image {
+  margin: 0 0 1rem;
+  overflow: hidden;
+  padding-top: 75%;
+  position: relative;
+  text-align: center;
+}
+
+.message-wrapper .image img {
+  height: 100%;
+  left: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.message-wrapper .image .mask {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .form-wrapper {

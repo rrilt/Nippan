@@ -8,32 +8,6 @@
 }
 
 
-.image {
-  margin :0 0 1rem;
-  overflow :hidden;
-  padding-top :75%;
-  position :relative;
-  text-align :center;
-
-  img {
-    height :100%;
-    left :50%;
-    object-fit :cover;
-    position :absolute;
-    top :50%;
-    transform :translate(-50%,-50%);
-  }
-
-  .mask {
-    background-color :rgba($color :#000000, $alpha :0.4);
-    height :100%;
-    left :0;
-    opacity :0;
-    position :absolute;
-    top :0;
-    width :100%;
-  }
-}
 
 .require-container {
   margin :0;
@@ -71,7 +45,7 @@
 }
 
 #recruit-head {
-  background-image :url(/asset/winter3.jpg);
+  background-image :url(asset/winter3.jpg);
   background-size :cover;
 }
 
@@ -96,6 +70,32 @@
   }
   .card-text {
     padding-top :0.5rem;
+  }
+  .image {
+    margin :0 0 1rem;
+    overflow :hidden;
+    padding-top :75%;
+    position :relative;
+    text-align :center;
+
+    img {
+      height :100%;
+      left :50%;
+      object-fit :cover;
+      position :absolute;
+      top :50%;
+      transform :translate(-50%,-50%);
+    }
+
+    .mask {
+      background-color :rgba($color :#000000, $alpha :0.4);
+      height :100%;
+      left :0;
+      opacity :0;
+      position :absolute;
+      top :0;
+      width :100%;
+    }
   }
 }
 

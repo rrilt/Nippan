@@ -1,0 +1,55 @@
+.admin-bar {
+  background-color :lighten($color :$black, $amount :10);
+  display :flex;
+  height :auto;
+  justify-content :center;
+  a {
+    color :$white;
+    padding-bottom :0.5rem;
+    padding-top :0.5rem;
+    text-align :center;
+    &:hover {
+      color :$a-color;
+    }
+  }
+}
+
+.caption-container {
+  h2 {
+    background-color :lighten($color :$blue, $amount :40);
+    border-left :4px solid $blue;
+    color :$black;
+    margin-top :3rem;
+    padding-bottom :1rem;
+    padding-left :0.5rem;
+    padding-top :0.5rem;
+  }
+  .caption-inner {
+    padding-top :2rem;
+    ul {
+      padding-left :1.5rem;
+    }
+    li {
+      list-style :square;
+    }
+  }
+}
+
+.sample-container {
+  h2 {
+    background-color :lighten($color :$blue, $amount :40);
+    border-left :4px solid $blue;
+    color :$black;
+    margin-top :3rem;
+    padding-bottom :1rem;
+    padding-left :0.5rem;
+    padding-top :0.5rem;
+  }
+  .sample-inner {
+    padding-top :5rem;
+  }
+}
+
+#footer-sample {
+  padding-bottom :10rem;
+}
