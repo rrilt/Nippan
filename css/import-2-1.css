@@ -899,7 +899,7 @@ footer .footer-copyright {
 }
 
 #introduction-head {
-  background-image: url(asset/introduction.jpg);
+  background-image: url(../asset/introduction.jpg);
   background-size: cover;
 }
 
@@ -1191,7 +1191,7 @@ footer .footer-copyright {
 }
 
 #education-head {
-  background-image: url(asset/summer2.jpg) !important;
+  background-image: url("../asset/summer2.jpg") !important;
   background-size: cover;
 }
 
@@ -1217,7 +1217,7 @@ footer .footer-copyright {
 }
 
 .philosophy-wrapper {
-  background-image: url(asset/education_background.jpg);
+  background-image: url("../asset/education_background.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1289,7 +1289,7 @@ footer .footer-copyright {
 }
 
 #feature-head {
-  background-image: url(asset/feature3.jpg);
+  background-image: url(../asset/feature3.jpg);
   background-size: cover;
 }
 
@@ -1387,7 +1387,7 @@ footer .footer-copyright {
 }
 
 #life-head {
-  background-image: url(asset/life.jpg);
+  background-image: url(../asset/life.jpg);
   background-size: cover;
 }
 
@@ -1614,7 +1614,7 @@ footer .footer-copyright {
 }
 
 #facility-head {
-  background-image: url(asset/facility3.png);
+  background-image: url(../asset/facility3.png);
   background-size: cover;
 }
 
@@ -1647,7 +1647,7 @@ footer .footer-copyright {
 }
 
 #event-head {
-  background-image: url(asset/event.jpg);
+  background-image: url(../asset/event.jpg);
   background-size: cover;
 }
 
@@ -1778,7 +1778,7 @@ footer .footer-copyright {
 }
 
 #admission-head {
-  background-image: url(asset/admission.png);
+  background-image: url(../asset/admission.png);
   background-size: cover;
 }
 
@@ -2064,7 +2064,7 @@ footer .footer-copyright {
 }
 
 #safety-head {
-  background-image: url(asset/firstview.jpg);
+  background-image: url(../asset/firstview.jpg);
   background-size: cover;
 }
 
@@ -2233,7 +2233,7 @@ footer .footer-copyright {
 }
 
 #recruit-head {
-  background-image: url(asset/winter3.jpg);
+  background-image: url(../asset/winter3.jpg);
   background-size: cover;
 }
 
