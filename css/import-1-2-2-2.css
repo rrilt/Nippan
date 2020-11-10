@@ -1017,7 +1017,7 @@ footer .footer-inner .footer-bottom {
 }
 
 #education-head {
-  background-image: url(asset/summer2.jpg) !important;
+  background-image: url("../asset/summer2.jpg") !important;
   background-size: cover;
 }
 
@@ -1043,7 +1043,7 @@ footer .footer-inner .footer-bottom {
 }
 
 .philosophy-wrapper {
-  background-image: url(asset/education_background.jpg);
+  background-image: url("../asset/education_background.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1115,7 +1115,7 @@ footer .footer-inner .footer-bottom {
 }
 
 #feature-head {
-  background-image: url(asset/feature3.jpg);
+  background-image: url(../asset/feature3.jpg);
   background-size: cover;
 }
 
@@ -1213,7 +1213,7 @@ footer .footer-inner .footer-bottom {
 }
 
 #life-head {
-  background-image: url(asset/life.jpg);
+  background-image: url(../asset/life.jpg);
   background-size: cover;
 }
 
@@ -1440,7 +1440,7 @@ footer .footer-inner .footer-bottom {
 }
 
 #facility-head {
-  background-image: url(asset/facility3.png);
+  background-image: url(../asset/facility3.png);
   background-size: cover;
 }
 
@@ -1473,7 +1473,7 @@ footer .footer-inner .footer-bottom {
 }
 
 #event-head {
-  background-image: url(asset/event.jpg);
+  background-image: url(../asset/event.jpg);
   background-size: cover;
 }
 
@@ -1604,7 +1604,7 @@ footer .footer-inner .footer-bottom {
 }
 
 #admission-head {
-  background-image: url(asset/admission.png);
+  background-image: url(../asset/admission.png);
   background-size: cover;
 }
 
@@ -1890,7 +1890,7 @@ footer .footer-inner .footer-bottom {
 }
 
 #safety-head {
-  background-image: url(asset/firstview.jpg);
+  background-image: url(../asset/firstview.jpg);
   background-size: cover;
 }
 
@@ -2059,7 +2059,7 @@ footer .footer-inner .footer-bottom {
 }
 
 #recruit-head {
-  background-image: url(asset/winter3.jpg);
+  background-image: url(../asset/winter3.jpg);
   background-size: cover;
 }
 
