@@ -143,6 +143,15 @@ img {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .open header .header-inner #nav-toggle:hover span:nth-child(1) {
+    top: 0.9375rem;
+  }
+  .open header .header-inner #nav-toggle:hover span:nth-child(3) {
+    top: 0.9375rem;
+  }
+}
+
 body {
   font-family: 'Noto Sans JP', sans-serif;
 }
@@ -151,7 +160,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #F18B1A;
+  background-color: #707070;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,8 +195,12 @@ body {
   font-family: "Kosugi Maru", sans-serif;
 }
 
+.breadcrumb .breacrumb-item li a {
+  color: #000000 !important;
+}
+
 .news-wrapper {
-  background-color: #F18B1A;
+  background-color: #707070;
   padding-bottom: 3rem;
   padding-top: 3rem;
 }
@@ -324,26 +337,6 @@ body {
           flex-direction: column;
 }
 
-.contents-wrapper .contents-container .title-en {
-  color: #F18B1A;
-  font-family: 'Noto Serif JP', serif;
-  font-size: 1rem;
-  font-weight: normal;
-  margin: 0;
-  padding-top: 1.25rem;
-  text-align: center;
-}
-
-.contents-wrapper .contents-container .title-jp {
-  font-family: 'Noto Serif JP', serif;
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 0;
-  padding-bottom: 3.375rem;
-  padding-top: 1.25rem;
-  text-align: center;
-}
-
 .contents-wrapper .contents-container .list-panel {
   overflow: hidden;
 }
@@ -383,7 +376,7 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   height: 100%;
   left: 0;
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   top: 0;
   width: 100%;
@@ -395,7 +388,7 @@ body {
   left: 50%;
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 45%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
@@ -413,13 +406,19 @@ body {
 }
 
 .contents-wrapper .contents-container .list-panel .list-panel-items .panel .box-title .box-jp {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0;
 }
 
 @media screen and (max-width: 767px) {
   .contents-wrapper .contents-container .list-panel .list-panel-items .panel .box-title .box-jp {
     font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contents-wrapper .contents-container .list-panel .list-panel-items .panel .box-title .box-jp {
+    font-size: 1.5rem;
   }
 }
 
@@ -474,7 +473,7 @@ body {
 }
 
 header {
-  background-color: #F18B1A;
+  background-color: #707070;
   font-family: "Kosugi Maru", sans-serif;
   height: 4rem;
   left: 0;
@@ -648,6 +647,12 @@ header .header-inner #gloval-nav a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  header .header-inner #gloval-nav a {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 991px) {
   header .header-inner #gloval-nav ul {
     list-style: none;
@@ -737,7 +742,7 @@ header .header-inner #gloval-nav a {
 }
 
 footer {
-  background-color: #F18B1A;
+  background-color: #707070;
   color: #FFFFFF;
   font-family: "Kosugi Maru", sans-serif;
   overflow: hidden;
@@ -894,6 +899,11 @@ footer .footer-copyright {
   width: 100%;
 }
 
+#introduction-head {
+  background-image: url(asset/introduction.jpg);
+  background-size: cover;
+}
+
 .boss-message {
   padding-top: 3rem;
 }
@@ -936,8 +946,8 @@ footer .footer-copyright {
     left: 50%;
     -o-object-fit: cover;
        object-fit: cover;
-    -o-object-position: 0px -1rem;
-       object-position: 0px -1rem;
+    -o-object-position: 0px 0px;
+       object-position: 0px 0px;
     position: absolute;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -949,7 +959,7 @@ footer .footer-copyright {
   .boss-message .container .boss-view {
     margin: 0 0 1rem;
     overflow: hidden;
-    padding-top: 50%;
+    padding-top: 30%;
     position: relative;
     text-align: center;
     width: 100%;
@@ -959,8 +969,31 @@ footer .footer-copyright {
     left: 50%;
     -o-object-fit: cover;
        object-fit: cover;
-    -o-object-position: 0px -1rem;
-       object-position: 0px -1rem;
+    -o-object-position: -32px 0px;
+       object-position: -32px 0px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .boss-message .container .boss-view {
+    margin: 0 0 1rem;
+    overflow: hidden;
+    padding-top: 30%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  .boss-message .container .boss-view img {
+    height: 100%;
+    left: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0px 0px;
+       object-position: 0px 0px;
     position: absolute;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -1038,17 +1071,17 @@ footer .footer-copyright {
 }
 
 .history-wrapper {
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 
 .history-wrapper h2 {
   font-family: "Kosugi Maru", sans-serif;
-  padding-bottom: 1;
+  padding-bottom: 1.2rem;
   text-align: center;
 }
 
 .profile {
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -1133,6 +1166,7 @@ footer .footer-copyright {
 }
 
 .profile .container-bottom .info-container .dd-container {
+  padding-bottom: 0.8rem;
   padding-top: 0.5rem;
 }
 
@@ -1157,6 +1191,11 @@ footer .footer-copyright {
   width: 100%;
 }
 
+#education-head {
+  background-image: url(asset/summer2.jpg) !important;
+  background-size: cover;
+}
+
 .philosophy-container {
   margin-top: 8rem;
   padding-bottom: 8rem;
@@ -1179,7 +1218,7 @@ footer .footer-copyright {
 }
 
 .philosophy-wrapper {
-  background-image: url(/asset/education_background.jpg);
+  background-image: url(asset/education_background.jpg);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1188,7 +1227,7 @@ footer .footer-copyright {
 
 .policy-container {
   padding-bottom: 4rem;
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 
 .policy-container h2 {
@@ -1244,52 +1283,23 @@ footer .footer-copyright {
   width: 100%;
 }
 
+@media screen and (min-width: 992px) {
+  .policy-container .text-container p {
+    line-height: 2;
+  }
+}
+
+#feature-head {
+  background-image: url(asset/feature3.jpg);
+  background-size: cover;
+}
+
 .feature-wrapper {
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
 
-.feature-wrapper .feature-contents {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 2rem;
-}
-
-@media screen and (min-width: 768px) {
-  .feature-wrapper .feature-contents {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .feature-wrapper .feature-contents {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .feature-wrapper .feature-contents .image-container {
-    padding-top: 1.5rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .feature-wrapper .feature-contents .image-container {
-    width: 45%;
-  }
-}
-
-.feature-wrapper .feature-contents .image-container .image {
+.feature-wrapper .image-container .image {
   margin: 0 0 2rem;
   overflow: hidden;
   position: relative;
@@ -1297,24 +1307,30 @@ footer .footer-copyright {
 }
 
 @media screen and (max-width: 767px) {
-  .feature-wrapper .feature-contents .image-container .image {
+  .feature-wrapper .image-container .image {
     padding-top: 50%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .feature-wrapper .feature-contents .image-container .image {
+  .feature-wrapper .image-container .image {
     padding-top: 150%;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .feature-wrapper .feature-contents .image-container .image {
+  .feature-wrapper .image-container .image {
+    padding-top: 130%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature-wrapper .image-container .image {
     padding-top: 100%;
   }
 }
 
-.feature-wrapper .feature-contents .image-container .image img {
+.feature-wrapper .image-container .image img {
   height: 100%;
   left: 50%;
   -o-object-fit: cover;
@@ -1325,7 +1341,7 @@ footer .footer-copyright {
           transform: translate(-50%, -50%);
 }
 
-.feature-wrapper .feature-contents .image-container .image .mask {
+.feature-wrapper .image-container .image .mask {
   background-color: rgba(0, 0, 0, 0.4);
   height: 100%;
   left: 0;
@@ -1335,14 +1351,45 @@ footer .footer-copyright {
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  .feature-wrapper .feature-contents .text-container {
-    width: 45%;
+.feature-wrapper h2 {
+  border-left: 4px solid #000000;
+  font-family: "Kosugi Maru", sans-serif;
+  margin-bottom: 2.5rem;
+  padding-left: 1.5rem;
+}
+
+@media screen and (max-width: 991px) {
+  .feature-wrapper h2 {
+    margin-bottom: 1.5rem;
   }
 }
 
-.feature-wrapper h2 {
+.feature-wrapper .feature-title {
   font-family: "Kosugi Maru", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media screen and (max-width: 991px) {
+  .feature-wrapper .feature-title {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.feature-wrapper .feature-text {
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 991px) {
+  .feature-wrapper .feature-text {
+    font-size: 0.875rem;
+  }
+}
+
+#life-head {
+  background-image: url(asset/life.jpg);
+  background-size: cover;
 }
 
 .opentime-container {
@@ -1567,9 +1614,20 @@ footer .footer-copyright {
   margin: 0;
 }
 
+#facility-head {
+  background-image: url(asset/facility3.png);
+  background-size: cover;
+}
+
 .facility-wrapper {
   padding-bottom: 3rem;
   padding-top: 3rem;
+}
+
+.facility-wrapper .facility-container h2 {
+  font-family: "Kosugi Maru", sans-serif;
+  padding-bottom: 2rem;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -1587,6 +1645,11 @@ footer .footer-copyright {
 .facility-wrapper .facility-container .facility figcaption {
   font-family: "Kosugi Maru", sans-serif;
   text-align: center;
+}
+
+#event-head {
+  background-image: url(asset/event.jpg);
+  background-size: cover;
 }
 
 .season-container .season-inner {
@@ -1617,9 +1680,9 @@ footer .footer-copyright {
 .season-big {
   border-radius: 50%;
   display: inline-block;
-  height: 100px;
+  height: 120px;
   position: relative;
-  width: 100px;
+  width: 120px;
 }
 
 .season-big p {
@@ -1632,7 +1695,11 @@ footer .footer-copyright {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 100px;
+  width: 120px;
+}
+
+.season-big p {
+  font-size: 1.5rem;
 }
 
 #spring {
@@ -1711,6 +1778,11 @@ footer .footer-copyright {
   }
 }
 
+#admission-head {
+  background-image: url(asset/admission.png);
+  background-size: cover;
+}
+
 .detail-container {
   background-color: #FFFFFF;
   border: 1px solid #CCCCCC;
@@ -1779,6 +1851,7 @@ footer .footer-copyright {
 }
 
 .com_table {
+  display: none;
   margin-top: 40px;
   table-layout: fixed;
   width: 100%;
@@ -1799,7 +1872,7 @@ footer .footer-copyright {
 
 .com_table td {
   background-color: white;
-  border-left: 1px solid #FFFFFF;
+  border-left: uuuuuuuuuuuuuuuuuuuuu1px solid #FFFFFF;
   padding: 1.4rem 0.3rem;
   text-align: center;
   vertical-align: middle;
@@ -1816,7 +1889,7 @@ footer .footer-copyright {
 }
 
 .admission-flow {
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 
 .admission-flow h2 {
@@ -1868,7 +1941,7 @@ footer .footer-copyright {
 
 .observation {
   padding-bottom: 3rem;
-  padding-top: 3rem;
+  padding-top: 6rem;
 }
 
 .observation .image {
@@ -1978,6 +2051,11 @@ footer .footer-copyright {
   margin: 0;
 }
 
+.observation .observation-detail {
+  margin: 0 auto;
+  max-width: 720px;
+}
+
 .triangle {
   border-color: #000000 transparent transparent transparent;
   border-style: solid;
@@ -1986,80 +2064,90 @@ footer .footer-copyright {
   width: 0;
 }
 
+#safety-head {
+  background-image: url(asset/firstview.jpg);
+  background-size: cover;
+}
+
 .safety-wrapper {
   padding-bottom: 3rem;
   padding-top: 4rem;
 }
 
-.safety-wrapper .safety-contents {
+.safety-wrapper h2 {
+  border-left: 4px solid #000000;
+  font-family: "Kosugi Maru", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  padding-left: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .safety-wrapper h2 {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .safety-wrapper h2 {
+    margin-bottom: 4rem;
+  }
+}
+
+.safety-wrapper .text-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
-  .safety-wrapper .safety-contents {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+@media screen and (min-width: 992px) {
+  .safety-wrapper .text-container p {
+    line-height: 2;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .safety-wrapper .safety-contents {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .safety-wrapper .safety-contents .image-container {
-    padding-top: 1.5rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .safety-wrapper .safety-contents .image-container {
-    width: 45%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .safety-wrapper .safety-contents .text-container {
-    margin: auto 0;
-    width: 45%;
-  }
-}
-
-.safety-wrapper h2 {
-  font-family: "Kosugi Maru", sans-serif;
-}
-
-@media screen and (min-width: 768px) {
-  #safety-2 .safety-contents {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-  }
-}
-
-.image {
-  margin: 0 0 1rem;
+.safety-wrapper .image-container .image {
+  margin: 0 0 2rem;
   overflow: hidden;
-  padding-top: 75%;
   position: relative;
   text-align: center;
 }
 
-.image img {
+@media screen and (max-width: 767px) {
+  .safety-wrapper .image-container .image {
+    padding-top: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .safety-wrapper .image-container .image {
+    padding-top: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .safety-wrapper .image-container .image {
+    padding-top: 75%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .safety-wrapper .image-container .image {
+    padding-top: 75%;
+  }
+}
+
+.safety-wrapper .image-container .image img {
   height: 100%;
   left: 50%;
   -o-object-fit: cover;
@@ -2070,7 +2158,7 @@ footer .footer-copyright {
           transform: translate(-50%, -50%);
 }
 
-.image .mask {
+.safety-wrapper .image-container .image .mask {
   background-color: rgba(0, 0, 0, 0.4);
   height: 100%;
   left: 0;
@@ -2078,6 +2166,16 @@ footer .footer-copyright {
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+.atmosphere-wrapper {
+  padding-top: 3rem;
+}
+
+.atmosphere-wrapper h2 {
+  font-family: "Kosugi Maru", sans-serif;
+  padding-bottom: 2rem;
+  text-align: center;
 }
 
 .require-container {
@@ -2135,8 +2233,13 @@ footer .footer-copyright {
   margin: 0;
 }
 
+#recruit-head {
+  background-image: url(asset/winter3.jpg);
+  background-size: cover;
+}
+
 .require-wrapper {
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 
 .require-wrapper h2 {
@@ -2146,7 +2249,7 @@ footer .footer-copyright {
 
 .message-wrapper {
   font-family: "Kosugi Maru", sans-serif;
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 
 .message-wrapper h2 {
@@ -2154,23 +2257,48 @@ footer .footer-copyright {
   text-align: center;
 }
 
-.message-wrapper .card {
-  padding-top: 1.5rem;
+.message-wrapper .card-subtitle {
+  color: #000000;
+  font-weight: bold;
 }
 
-.atmosphere-wrapper {
-  padding-top: 3rem;
+.message-wrapper .card-text {
+  padding-top: 0.5rem;
 }
 
-.atmosphere-wrapper h2 {
-  font-family: "Kosugi Maru", sans-serif;
-  padding-bottom: 2rem;
+.message-wrapper .image {
+  margin: 0 0 1rem;
+  overflow: hidden;
+  padding-top: 75%;
+  position: relative;
   text-align: center;
+}
+
+.message-wrapper .image img {
+  height: 100%;
+  left: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.message-wrapper .image .mask {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .form-wrapper {
   font-family: "Kosugi Maru", sans-serif;
-  padding-top: 4rem;
+  padding-bottom: 3rem;
+  padding-top: 6rem;
   /* -- for JavaScript ここから -------------------------------------------------------------------------------- */
   /* -- for JavaScript ここまで -------------------------------------------------------------------------------- */
   /* -- responsive ----------------------------------------------------------------------------------------------------------------- */
@@ -2193,7 +2321,7 @@ footer .footer-copyright {
   background: #FFFFFF;
   font-size: 95%;
   line-height: 1.8;
-  margin: 3.125rem auto;
+  margin: 1.5rem auto 3rem;
   padding: 0.625rem 0;
   width: 60rem;
 }
@@ -2291,7 +2419,6 @@ footer .footer-copyright {
   font-family: inherit;
   font-size: 100%;
   margin-top: 0.4375rem;
-  max-width: 90%;
   padding: 0.4375rem 2%;
 }
 
@@ -2416,7 +2543,7 @@ footer .footer-copyright {
 }
 
 .form-wrapper form #form_submit_button {
-  background-color: #001E38;
+  background-color: #000000;
   border: none;
   border-radius: 0;
   color: #FFFFFF;
@@ -2442,7 +2569,7 @@ footer .footer-copyright {
 }
 
 .form-wrapper form #form_submit_button:hover {
-  background-color: #F18B1A;
+  background-color: #707070;
 }
 
 @media screen and (max-width: 992px) {
@@ -2550,6 +2677,24 @@ footer .footer-copyright {
   font-size: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .question-wrapper h4 {
+    max-width: 490px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .question-wrapper h4 {
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .question-wrapper h4 {
+    max-width: 330px;
+  }
+}
+
 .question-wrapper p {
   color: rgba(48, 69, 92, 0.8);
   font-size: 17px;
@@ -2623,6 +2768,18 @@ footer .footer-copyright {
           transform: translate(-6px, 0);
   right: 0;
   margin-top: 4px;
+}
+
+@media screen and (max-width: 575px) {
+  .question-wrapper ul li i {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .question-wrapper ul li i {
+    margin-top: 24px;
+  }
 }
 
 .question-wrapper ul li i:before, .question-wrapper ul li i:after {
@@ -2732,5 +2889,67 @@ footer .footer-copyright {
             transform: rotateX(0deg);
     /*フリップイン終了*/
   }
+}
+
+.admin-bar {
+  background-color: rgba(65, 94, 126, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.admin-bar a {
+  color: #fefffa;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+.admin-bar a:hover {
+  color: #000000;
+}
+
+.caption-container h2 {
+  background-color: #d3d3fb;
+  border-left: 4px solid #1718EB;
+  color: rgba(48, 69, 92, 0.8);
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.caption-container .caption-inner {
+  padding-top: 2rem;
+}
+
+.caption-container .caption-inner ul {
+  padding-left: 1.5rem;
+}
+
+.caption-container .caption-inner li {
+  list-style: square;
+}
+
+.sample-container h2 {
+  background-color: #d3d3fb;
+  border-left: 4px solid #1718EB;
+  color: rgba(48, 69, 92, 0.8);
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.sample-container .sample-inner {
+  padding-top: 5rem;
+}
+
+#footer-sample {
+  padding-bottom: 10rem;
 }
 /*# sourceMappingURL=import-1-1-1-1.css.map */

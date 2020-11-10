@@ -1,42 +1,76 @@
+#safety-head {
+  background-image :url(asset/firstview.jpg);
+  background-size :cover;
+}
+
 .safety-wrapper {
   padding-bottom :3rem;
   padding-top :4rem;
-  .safety-contents {
-    @include mq-up(md) {
-      flex-direction :row;
-      justify-content :space-between;
+
+  h2 {
+    @include mq-down(md) {
+      margin-bottom :3rem;
     }
 
-@include mq-down(md) {
-      flex-direction :column;
-    }  display :flex;
-    padding-top :2rem;
-
-    .image-container {
+@include mq-down(lg) {
+      margin-bottom :4rem;
+    }  border-left :4px solid $black;
+    font-family :$font-x;
+    font-size :2rem;
+    margin-bottom :5rem;
+    padding-left :1.5rem;
+  }
+  .text-container {
+    align-items :center;
+    display :flex;
+    flex-direction :column;
+    justify-content :center;
+    p {
+      @include mq-up(lg) {
+        line-height :2;
+      }
+    }
+  }
+  .image-container {
+    .image {
       @include mq-down(md) {
-        padding-top :1.5rem;
+        padding-top :50%;
       }
 
 @include mq-up(md) {
-        width :45%;
+        padding-top :100%;
+      }
+
+@include mq-up(lg) {
+        padding-top :75%;
+      }
+
+@include mq-up(xl) {
+        padding-top :75%;
+      } margin :0 0 2rem;
+      overflow :hidden;
+      position :relative;
+      text-align :center;
+
+      img {
+        height :100%;
+        left :50%;
+        object-fit :cover;
+        position :absolute;
+        top :50%;
+        transform :translate(-50%,-50%);
+      }
+
+      .mask {
+        background-color :rgba($color :#000000, $alpha :0.4);
+        height :100%;
+        left :0;
+        opacity :0;
+        position :absolute;
+        top :0;
+        width :100%;
       }
     }
-    .text-container {
-      @include mq-up(md) {
-        margin :auto 0;
-        width :45%;
-      }
-    }
-  }
-  h2 {
-    font-family :$font-xu;
   }
 }
 
-#safety-2 {
-  .safety-contents {
-    @include mq-up(md) {
-      flex-direction :row-reverse;
-    }
-  }
-}

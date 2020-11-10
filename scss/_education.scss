@@ -1,3 +1,8 @@
+#education-head {
+  background-image :url(asset/summer2.jpg)!important;
+  background-size :cover;
+}
+
 .philosophy-container {
   margin-top :8rem;
   padding-bottom :8rem;
@@ -18,7 +23,7 @@
 }
 
 .philosophy-wrapper {
-  background-image :url(/asset/education_background.jpg);
+  background-image :url(asset/education_background.jpg);
   background-position :center bottom;
   background-repeat :no-repeat;
   background-size :cover;
@@ -27,7 +32,7 @@
 
 .policy-container {
   padding-bottom :4rem;
-  padding-top :4rem;
+  padding-top :6rem;
   h2 {
     font-family :$font-x;
     text-align :center;
@@ -66,6 +71,13 @@
       position :absolute;
       top :0;
       width :100%;
+    }
+  }
+  .text-container {
+    p {
+      @include mq-up(lg) {
+        line-height :2;
+      }
     }
   }
 }

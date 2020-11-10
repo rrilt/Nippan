@@ -1,29 +1,13 @@
-.image {
-  margin :0 0 1rem;
-  overflow :hidden;
-  padding-top :75%;
-  position :relative;
-  text-align :center;
-
-  img {
-    height :100%;
-    left :50%;
-    object-fit :cover;
-    position :absolute;
-    top :50%;
-    transform :translate(-50%,-50%);
-  }
-
-  .mask {
-    background-color :rgba($color :#000000, $alpha :0.4);
-    height :100%;
-    left :0;
-    opacity :0;
-    position :absolute;
-    top :0;
-    width :100%;
+.atmosphere-wrapper {
+  padding-top :3rem;
+  h2 {
+    font-family :$font-x;
+    padding-bottom :2rem;
+    text-align :center;
   }
 }
+
+
 
 .require-container {
   margin :0;
@@ -60,8 +44,13 @@
   }
 }
 
+#recruit-head {
+  background-image :url(asset/winter3.jpg);
+  background-size :cover;
+}
+
 .require-wrapper {
-  padding-top :4rem;
+  padding-top :6rem;
   h2 {
     padding-bottom :2rem;
     text-align :center;
@@ -70,29 +59,52 @@
 
 .message-wrapper {
   font-family :$font-x;
-  padding-top :4rem;
+  padding-top :6rem;
   h2 {
     padding-bottom :2rem;
     text-align :center;
   }
-
-  .card {
-    padding-top :1.5rem;
+  .card-subtitle {
+    color :$black;
+    font-weight :bold;
   }
-}
-
-.atmosphere-wrapper {
-  padding-top :3rem;
-  h2 {
-    font-family :$font-x;
-    padding-bottom :2rem;
+  .card-text {
+    padding-top :0.5rem;
+  }
+  .image {
+    margin :0 0 1rem;
+    overflow :hidden;
+    padding-top :75%;
+    position :relative;
     text-align :center;
+
+    img {
+      height :100%;
+      left :50%;
+      object-fit :cover;
+      position :absolute;
+      top :50%;
+      transform :translate(-50%,-50%);
+    }
+
+    .mask {
+      background-color :rgba($color :#000000, $alpha :0.4);
+      height :100%;
+      left :0;
+      opacity :0;
+      position :absolute;
+      top :0;
+      width :100%;
+    }
   }
 }
+
 
 .form-wrapper {
   font-family :$font-x;
-  padding-top :4rem;
+  padding-bottom :3rem;
+  padding-top :6rem;
+
   h2 {
     font-family :$font-x;
     text-align :center;
@@ -104,10 +116,10 @@
   }
 
   form#mail_form {
-    background :#FFFFFF;
+    background :$white ;
     font-size :95%;
     line-height :1.8;
-    margin :3.125rem auto;
+    margin :1.5rem auto 3rem;
     padding :0.625rem 0;
     width :60rem;
   }
@@ -217,7 +229,6 @@
     font-family :inherit;
     font-size :100%;
     margin-top :0.4375rem;
-    max-width :90%;
     padding :0.4375rem 2%;
   }
 
@@ -328,7 +339,7 @@
   }
 
   form #form_submit_button {
-    background-color :$navy;
+    background-color :$a-color;
     border :none;
     border-radius :0;
     color :#FFFFFF;
@@ -354,7 +365,7 @@
   }
 
   form #form_submit_button:hover {
-    background-color :$orange;
+    background-color :$m-color;
   }
 
 

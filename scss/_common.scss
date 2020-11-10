@@ -49,6 +49,16 @@ img {
           transition :transform 1s ease, opacity 0.9s ease  ;
         }
       }
+      #nav-toggle {
+        @include mq-down(lg) {
+          &:hover span:nth-child(1) {
+            top :0.9375rem;
+          }
+          &:hover span:nth-child(3) {
+            top :0.9375rem ;
+          }
+        }
+      }
     }
   }
 }
@@ -63,7 +73,7 @@ $font-x :'Kosugi Maru', sans-serif;
   @include mq-down(md) {
     height :100px;
   }  align-items :center;
-  background-color :$orange;
+  background-color :$m-color;
   display :flex;
   height :260px;
   width :100%;
@@ -84,5 +94,12 @@ $font-x :'Kosugi Maru', sans-serif;
 
 .breadcrumb {
   font-family :$font-x;
+  .breacrumb-item {
+    li {
+      a {
+        color :$a-color!important;
+      }
+    }
+  }
 }
 

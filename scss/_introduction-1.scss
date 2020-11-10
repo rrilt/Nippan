@@ -1,3 +1,8 @@
+#introduction-head {
+  background-image :url(asset/introduction.jpg);
+  background-size :cover;
+}
+
 .boss-message {
   padding-top :3rem;
   h2 {
@@ -25,7 +30,7 @@
           height :100%;
           left :50%;
           object-fit :cover;
-          object-position :0px -1rem;
+          object-position :0px 0px;
           position :absolute;
           top :50%;
           transform :translate(-50%,-50%);
@@ -35,7 +40,7 @@
 @include mq-up(md) {
         margin :0 0 1rem;
         overflow :hidden;
-        padding-top :50%;
+        padding-top :30%;
         position :relative;
         text-align :center;
         width :100%;
@@ -44,13 +49,34 @@
           height :100%;
           left :50%;
           object-fit :cover;
-          object-position :0px -1rem;
+          object-position :-32px 0px;
+          position :absolute;
+          top :50%;
+          transform :translate(-50%,-50%);
+        }
+      }
+
+@include mq-up(lg) {
+        margin :0 0 1rem;
+        overflow :hidden;
+        padding-top :30%;
+        position :relative;
+        text-align :center;
+        width :100%;
+
+        img {
+          height :100%;
+          left :50%;
+          object-fit :cover;
+          object-position :0px 0px;
           position :absolute;
           top :50%;
           transform :translate(-50%,-50%);
         }
       }
     }
+
+
     .message-container {
       display :flex;
       flex-direction :column;
@@ -99,10 +125,10 @@
 
 
 .history-wrapper {
-  padding-top :4rem;
+  padding-top :6rem;
   h2 {
     font-family :$font-x;
-    padding-bottom :1;
+    padding-bottom :1.2rem;
     text-align :center;
   }
 }
@@ -113,7 +139,7 @@
 
 @include mq-up(md) {
     padding-bottom :3rem;
-  }  padding-top :4rem;
+  }  padding-top :6rem;
 
   h2 {
     font-family :$font-x;
@@ -167,6 +193,7 @@
         margin :0.8rem 0;
       }
       .dd-container {
+        padding-bottom :0.8rem;
         padding-top :0.5rem;
       }
     }

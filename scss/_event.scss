@@ -1,3 +1,7 @@
+#event-head {
+  background-image :url(asset/event.jpg);
+  background-size :cover;
+}
 
 .season-container {
   .season-inner {
@@ -30,7 +34,10 @@
 }
 
 .season-big {
-  @include season(100px);
+  @include season(120px);
+  p {
+    font-size :1.5rem;
+  }
 }
 
 
